@@ -1,0 +1,36 @@
+$Arial:     Arial, sans-serif, Helvetica, Verdana;
+@mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
+@mixin border-radius($radius) {border-radius: $radius;}
+*{margin:0; padding:0;}
+a {color:inherit; text-decoration: none;}
+img {border:none; max-width: 100%;}
+li {list-style-type: none;}
+body {font:12px $Arial; color:#333; background: url(../images/bg.png) repeat 0 0;}
+h1, h2, h3, h4, h5 {}
+h1 {font-size: 28px;}
+.inner {width:1000px; margin:auto;}
+.left {float:left;}.right {float: right;}
+.clear {clear:both;}
+.clearfix:after {content: "";display: table;clear: both;}
+.checkbox, .radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../images/checkbox.png) no-repeat;
+	display: block;
+	clear: left;
+	float: left;
+}
+.radio {
+	background: url(../images/radio.png) no-repeat;
+}
+.select {
+	position: absolute;
+	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0 24px 0 8px;
+	color: #fff;
+	font: 12px/21px arial,sans-serif;
+	background: url(../images/select.png) no-repeat;
+	overflow: hidden;
+}
