@@ -44,7 +44,7 @@ h1 {
   clear: both;
 }
 
-.clearfix:after {
+.clearfix:after, .startup:after, .startup .listpages:after {
   content: "";
   display: table;
   clear: both;
@@ -76,8 +76,48 @@ h1 {
   overflow: hidden;
 }
 
-#header {
-  background: #fff;
-  height: 68px;
-  padding-top: 49px;
+/* startup page */
+.startup {
+  background: url(../images/home-bg.jpg) repeat 0 0;
+  background-size: 100%;
+  color: #fff;
+}
+.startup .inner {
+  width: 985px;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+.startup .logo {
+  margin-bottom: 90px;
+}
+.startup .listpages li {
+  float: left;
+  padding: 17px 17px 26px;
+  width: 157px;
+  margin: 0 3px;
+}
+.startup .listpages li a.title-page {
+  font-size: 11px;
+  width: 169px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 40px;
+  display: block;
+  background: url(../images/startup-button.png) no-repeat 0 0;
+}
+.startup .listpages li a.title-page.coming {
+  background-position: 0 bottom;
+}
+.startup .listpages li:hover {
+  background: url(../images/overlay.png) repeat 0 0;
+  border-radius: 5px;
+}
+.startup .listpages li:hover a.title-page {
+  background-position: 0 -64px;
+}
+.startup .home-copyright {
+  font-size: 15px;
+  margin-top: 110px;
 }

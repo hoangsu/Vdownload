@@ -1,3 +1,18 @@
 @import "modules.scss";
-
-#header {background: #fff; height: 68px; padding-top: 49px;}
+/* startup page */
+.startup {background: url(../images/home-bg.jpg) repeat 0 0; background-size: 100%; @extend .clearfix; color:#fff;
+	.inner {width: 985px; margin:auto; padding:100px 0; text-align: center;}
+	.logo {margin-bottom: 90px;}
+	.listpages{ @extend .clearfix;
+		li{float: left; padding:17px 17px 26px; width: 157px; margin:0 3px;
+			a.title-page {font-size: 11px; width: 169px; height: 45px; text-align: center; line-height: 45px; margin-top: 40px; display: block; background: url(../images/startup-button.png) no-repeat 0 0;
+				&.coming {background-position: 0 bottom;}
+			}
+			&:hover{background:url(../images/overlay.png) repeat 0 0; border-radius: 5px;
+				a.title-page {background-position: 0 -64px;
+				}
+			}
+		}
+	}
+	.home-copyright {font-size: 15px;margin-top: 110px;}
+}
