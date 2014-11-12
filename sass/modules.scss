@@ -3,7 +3,7 @@ $bluelink: #0087c1;
 $red : #ea0000;
 $black1: #343434;
 
-@font-face {
+/* @font-face {
     font-family: 'helveticaneue';
     src: url('../fonts/helveticaneue-regular-webfont.eot');
     src: url('../fonts/helveticaneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -25,7 +25,7 @@ $black1: #343434;
     font-weight: 500;
     font-style: normal;
 }
-$helveticaneue:   'helveticaneue', Arial, sans-serif;
+$helveticaneue:   'helveticaneue', Arial, sans-serif; */
 $Arial:     Arial, sans-serif, Verdana;
 @mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
 @mixin border-radius($radius) {border-radius: $radius;}
@@ -33,7 +33,7 @@ $Arial:     Arial, sans-serif, Verdana;
 a {color:inherit; text-decoration: none;}
 img {border:none; max-width: 100%;}
 li {list-style-type: none;}
-body {font:15px $Arial; color:$black1; background: #fff;}
+body {font:normal 15px $Arial; color:$black1; background: #e5e5e5;}
 .inner {width:1000px; margin:auto;}
 .left {float:left;}.right {float: right;}
 .clear {clear:both;}
@@ -55,4 +55,17 @@ body {font:15px $Arial; color:$black1; background: #fff;}
 	padding: 0 30px 0 10px;
 	background: url(../images/select.png) no-repeat right center;
 	overflow: hidden;
+}
+#content {margin-top:15px; }
+.col-left {float: left; width: 212px; margin-right: 14px;}
+.main-content {width: 774px; float: left;}
+.col-right {float: right; width: 286px; margin-left: 14px;}
+.col-mid {width: 474px; float: left}
+.block-title {background: $bluebg; height: 34px; line-height: 34px; padding: 0 10px; text-transform: uppercase; color:#fff;
+	h3 {font-weight: normal; font-size: 15px;}
+}
+.block, .block-adv {margin-bottom: 15px;}
+.block {background: #fff;}
+.ratings {background: url(../images/icons/no-rating1.png) repeat-x 0 0; height: 11px; display: block; width: 56px; margin:3px 0;
+	.rating-per {background: url(../images/icons/rating1.png) repeat-x 0 0; height: 11px; display: block;}
 }

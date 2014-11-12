@@ -1,5 +1,8 @@
-@font-face { font-family: 'helveticaneue'; src: url("../fonts/helveticaneue-regular-webfont.eot"); src: url("../fonts/helveticaneue-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-regular-webfont.woff2") format("woff2"), url("../fonts/helveticaneue-regular-webfont.woff") format("woff"), url("../fonts/helveticaneue-regular-webfont.ttf") format("truetype"), url("../fonts/helveticaneue-regular-webfont.svg#helveticaneue") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'helveticaneue'; src: url("../fonts/helveticaneue-medium-webfont.eot"); src: url("../fonts/helveticaneue-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue-medium-webfont.woff2") format("woff2"), url("../fonts/helveticaneue-medium-webfont.woff") format("woff"), url("../fonts/helveticaneue-medium-webfont.ttf") format("truetype"), url("../fonts/helveticaneue-medium-webfont.svg#helveticaneue") format("svg"); font-weight: 500; font-style: normal; }
+/* @font-face { font-family: 'helveticaneue'; src: url('../fonts/helveticaneue-regular-webfont.eot'); src: url('../fonts/helveticaneue-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneue-regular-webfont.woff2') format('woff2'), url('../fonts/helveticaneue-regular-webfont.woff') format('woff'), url('../fonts/helveticaneue-regular-webfont.ttf') format('truetype'), url('../fonts/helveticaneue-regular-webfont.svg#helveticaneue') format('svg'); font-weight: normal; font-style: normal;
+}
+@font-face { font-family: 'helveticaneue'; src: url('../fonts/helveticaneue-medium-webfont.eot'); src: url('../fonts/helveticaneue-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'), url('../fonts/helveticaneue-medium-webfont.woff') format('woff'), url('../fonts/helveticaneue-medium-webfont.ttf') format('truetype'), url('../fonts/helveticaneue-medium-webfont.svg#helveticaneue') format('svg'); font-weight: 500; font-style: normal;
+}
+$helveticaneue:   'helveticaneue', Arial, sans-serif; */
 * { margin: 0; padding: 0; }
 
 a { color: inherit; text-decoration: none; }
@@ -8,7 +11,7 @@ img { border: none; max-width: 100%; }
 
 li { list-style-type: none; }
 
-body { font: 15px Arial, sans-serif, Verdana; color: #343434; background: #fff; }
+body { font: normal 15px Arial, sans-serif, Verdana; color: #343434; background: #e5e5e5; }
 
 .inner { width: 1000px; margin: auto; }
 
@@ -25,6 +28,26 @@ body { font: 15px Arial, sans-serif, Verdana; color: #343434; background: #fff; 
 .radio { background: url(../images/radio.png) no-repeat; }
 
 .select { position: absolute; padding: 0 30px 0 10px; background: url(../images/select.png) no-repeat right center; overflow: hidden; }
+
+#content { margin-top: 15px; }
+
+.col-left { float: left; width: 212px; margin-right: 14px; }
+
+.main-content { width: 774px; float: left; }
+
+.col-right { float: right; width: 286px; margin-left: 14px; }
+
+.col-mid { width: 474px; float: left; }
+
+.block-title { background: #19a1db; height: 34px; line-height: 34px; padding: 0 10px; text-transform: uppercase; color: #fff; }
+.block-title h3 { font-weight: normal; font-size: 15px; }
+
+.block, .block-adv { margin-bottom: 15px; }
+
+.block { background: #fff; }
+
+.ratings { background: url(../images/icons/no-rating1.png) repeat-x 0 0; height: 11px; display: block; width: 56px; margin: 3px 0; }
+.ratings .rating-per { background: url(../images/icons/rating1.png) repeat-x 0 0; height: 11px; display: block; }
 
 /* startup page */
 .startup { background: url(../images/home-bg.jpg) repeat 0 0; background-size: 100%; color: #fff; }
@@ -65,12 +88,30 @@ body { font: 15px Arial, sans-serif, Verdana; color: #343434; background: #fff; 
 .main-menu li:last-child { padding-right: 0; float: right; }
 .main-menu li:last-child img { padding-right: 0; }
 
-#content { margin-top: 15px; }
+/* end header */
+/* col left */
+.block-top { margin-bottom: 28px; padding-bottom: 10px; }
+.block-top .block-title { background: url(../images/icons/title-top.png) no-repeat right center #19a1db; }
+.block-top .block-title h3 { font-size: 17px; text-transform: none; font-weight: 400; }
+.block-top ul { padding: 10px; max-height: 403px; overflow: hidden; }
+.block-top ul li { margin-bottom: 13px; }
+.block-top ul li a:hover { color: #0087c1; }
+.block-top a.viewless, .block-top a.viewmore { color: #0087c1; display: block; padding-left: 10px; }
+.block-top a.viewless { display: none; }
 
-.col-left { float: left; width: 212px; margin-right: 14px; }
+.fanpage .block-title h3 { font-size: 13px; }
 
-.main-content { width: 774px; float: left; }
+.tt-mt ul { padding: 15px 0; }
+.tt-mt ul li { padding-left: 25px; padding-right: 10px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #e2e2e2; background: url(../images/blue-dot.png) no-repeat 10px 7px; clear: both; }
+.tt-mt ul li a { color: #343434; }
+.tt-mt ul li:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 
-.col-right { float: right; width: 286px; margin-left: 14px; }
+.app-mobile ul { margin-top: 15px; }
+.app-mobile ul li { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #e2e2e2; }
+.app-mobile ul li img { margin-left: 5px; float: left; width: 61px; height: 61px; margin-right: 5px; }
+.app-mobile ul li .details { overflow: hidden; }
+.app-mobile ul li .details .name-app { width: 141px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: normal; font-size: 14px; text-transform: uppercase; }
+.app-mobile ul li .details p { font-size: 13px; color: #797979; }
 
-.col-mid { width: 474px; float: left; }
+/* main content */
+.home-slider .flex-viewport img { border: 4px solid #252525; border-radius: 5px; }
