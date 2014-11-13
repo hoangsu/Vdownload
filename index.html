@@ -23,7 +23,7 @@
 		js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.0";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53352c0f0ecbc4cd" async="async"></script>-->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53352c0f0ecbc4cd" async="async"></script>
 
 	<div id="header">
 		<div class="top-header">
@@ -42,7 +42,7 @@
 					<input class="email" type="email" name="email" value="" placeholder="Email">
 					<input class="password" type="password" name="password" value="" placeholder="Mật khẩu">
 					<input class="repassword" type="password" name="repassword" value="" placeholder="Nhập lại mật khẩu">
-					<button type="submit" class="button blue"><span>Đăng ký</span></button>
+					<button type="submit" class="dl-button-bl"><span>Đăng ký</span></button>
 				</form>
 				<div class="bottom-form">
 					<a class='inline button darkgrey' href="#login-ct" title="">Đăng nhập</a>
@@ -61,7 +61,7 @@
 					<input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập hoặc email">
 					<input class="password" type="password" name="password" value="" placeholder="Mật khẩu">
 					<input class="savepass" type="checkbox" name="savepass" checked="check">
-					<button type="submit" class="button blue"><span>Đăng Nhập</span></button>
+					<button type="submit" class="dl-button-bl"><span>Đăng Nhập</span></button>
 				</form>
 				<div class="login-social">
 					<p>Hoặc đăng nhập bằng</p>
@@ -89,6 +89,7 @@
 					<form action="#" method="post" accept-charset="utf-8">
 						<input type="text" class="input-search" name="key" value="" placeholder="Nhập tên ứng dụng hoặc chức năng...">
 						<select name="category" class="styled">
+							<option value="">Tất cả</option>
 							<option value="">Computer</option>
 							<option value="">Android</option>
 							<option value="">Ios</option>
@@ -105,7 +106,7 @@
 		<div class="main-menu">
 			<div class="inner">
 				<ul>
-					<li><a href="#" title=""><img src="images/icons/cpt.png" alt="">Computer</a></li>
+					<li class="active"><a href="#" title=""><img src="images/icons/cpt.png" alt="">Computer</a></li>
 					<li><a href="#" title=""><img src="images/icons/android.png" alt="">Android</a></li>
 					<li><a href="#" title=""><img src="images/icons/ios.png" alt="">IOS</a></li>
 					<li><a href="#" title=""><img src="images/icons/wp.png" alt="">Winphone</a></li>
@@ -234,15 +235,6 @@
 						</li>
 					</ul>
 				</div>
-				<script type="text/javascript">
-				$(window).load(function() {
-					$('.home-slider').flexslider({
-						animation: "slide",
-						controlNav: "thumbnails",
-						directionNav:false
-					});
-				});
-				</script>
 				<div class="col-mid">
 					<div class="app-block hotest-app">
 						<div class="block-title">
@@ -252,22 +244,24 @@
 							<h3 class="title">Adobe Flash Player 15.0 Chạy file swf, flv... trên trình duyệt</h3>
 							<a href="#" title="" class="thumb"><img src="images/appicons/flash.jpg" alt=""></a>
 							<div class="info">
-								<div class="left">
-									<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Miễn phí</a></p>
-									<p><span class="ratings"><span class="rating-per"></span></span></p>
-									<p>(2544 Đánh giá)</p>
+								<div class="top-info">
+									<div class="left">
+										<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Miễn phí</a></p>
+										<p><span class="ratings1"><span class="rating-per1" style="width:80%;"></span></span></p>
+										<p>(2544 Đánh giá)</p>
+									</div>
+									<div class="right">
+										<a href="#" class="dl-button-org" title="download">Download</a>
+										<p class="downtimes">254432 lượt tải</p>
+									</div>
 								</div>
-								<div class="right">
-									<a href="#" class="button orange" title="download">Download</a>
-									<p class="downtimes">254432 lượt tải</p>
-								</div>
-								<div class="clear"></div>
+								
 								<div class="sharetool">
 									<div class="addthis_native_toolbox"></div>
 								</div>
-								<p><strong>Phiên bản:</strong> 15.0.0.189</p>
-								<p><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
-								<p><a href="#" title=""></a><strong>Phát hành bởi Adobe Systems</strong></a></p>
+								<p class="smallt"><strong>Phiên bản:</strong> 15.0.0.189</p>
+								<p class="smallt"><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
+								<p class="producer"><a href="#" title=""><strong>Phát hành bởi Adobe Systems</strong></a></p>
 								<p>Adobe Flash Player 15 là phần mềm hỗ trợ trình duyệt giúp bạn có thể xem được các hình flash trong khi lướt web.</p>
 								<div class="tag"><strong>Tìm thêm: </strong>
 									<a href="#">Adobe Flash Player</a>
@@ -282,121 +276,122 @@
 						</div>
 					</div>
 					<ul class="highline">
-						<li><a href="#">UniKey 4.2 RC4</a><span class="downtimes">20.620.865</span></li>
-						<li><a href="#">WinRAR 5.20 Beta2</a><span class="downtimes">7.789.880</span></li>
-						<li><a href="#">Internet Download Manager 6.21 Build 14 </a><span class="downtimes">29.128.086</span></li>
-						<li><a href="#"> Avira Free Antivirus 2014 14.0 </a><span class="downtimes">6.822.647</span></li>
-						<li><a href="#"> Giáo trình Photoshop CS 8.0</a><span class="downtimes">248.392</span></li>
-						<li><a href="#"> Tự học Microsoft Excel</a><span class="downtimes"> 346.961</span></li>
+						<li><span class="number">1</span><a href="#">UniKey 4.2 RC4</a><span class="downtimes">20.620.865</span></li>
+						<li><span class="number">2</span><a href="#">WinRAR 5.20 Beta2</a><span class="downtimes">7.789.880</span></li>
+						<li><span class="number">3</span><a href="#">Internet Download Manager 6.21 Build 14 </a><span class="downtimes">29.128.086</span></li>
+						<li><span class="number">4</span><a href="#"> Avira Free Antivirus 2014 14.0 </a><span class="downtimes">6.822.647</span></li>
+						<li><span class="number">5</span><a href="#"> Giáo trình Photoshop CS 8.0</a><span class="downtimes">248.392</span></li>
+						<li><span class="number">6</span><a href="#"> Tự học Microsoft Excel</a><span class="downtimes"> 346.961</span></li>
 					</ul>
-					<div class="app-block newest-app">
-						<div class="block-title">
-							<h3>Mới cập nhật</h3>
+					<div class="newest-app">
+						<div class="app-block">
+							<div class="block-title">
+								<h3>Mới cập nhật</h3>
+							</div>
+							<div class="app-block-content">
+								<h3 class="title">Internet Download Manager 6.21 Build 14 IDM tăng tốc download</h3>
+								<a href="#" title="" class="thumb"><img src="images/appicons/idm.jpg" alt=""></a>
+								<div class="info">
+									<div class="left">
+										<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
+										<p><span class="ratings1"><span class="rating-per1" style="width:80%;"></span></span></p>
+										<p>(2544 Đánh giá)</p>
+									</div>
+									<div class="right">
+										<a href="#" class="dl-button-org" title="download">Download</a>
+										<p class="downtimes">254432 lượt tải</p>
+									</div>
+									<div class="sharetool">
+										<div class="addthis_native_toolbox"></div>
+									</div>
+									<p class="producer">Phát hành: <a href="#" title=""><strong>Tonec</strong></a></p>
+									<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
+									<p class="smallt"><strong>Lượt tải: </strong>9.453.521</p>
+									<p class="smallt"><strong>Phiên bản:</strong> 15.0.0.189</p>
+									<p  class="smallt"><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
+									<div class="tag"><strong>Tìm thêm: </strong>
+										<a href="#">Adobe Flash Player</a>
+										<a href="#">Adobte Flash Player 15</a> 
+										<a href="#">download Adobe Flash Player</a> 
+										<a href="#">tải Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player mới nhất</a> 
+										<a href="#">hỗ trợ trình duyệt.</a>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="app-block-content">
-							<h3 class="title">Internet Download Manager 6.21 Build 14 IDM tăng tốc download</h3>
-							<a href="#" title="" class="thumb"><img src="images/idm.jpg" alt=""></a>
-							<div class="info">
-								<div class="left">
-									<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
-									<p><span class="ratings"><span class="rating-per"></span></span></p>
-									<p>(2544 Đánh giá)</p>
+						<div class="app-block">
+							<div class="app-block-content">
+								<h3 class="title">UniKey 4.2 RC4 Bộ gõ tiếng Việt phổ biến nhất</h3>
+								<a href="#" title="" class="thumb"><img src="images/appicons/unikey.jpg" alt=""></a>
+								<div class="info">
+									<div class="left">
+										<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
+										<p><span class="ratings1"><span class="rating-per1" style="width:80%;"></span></span></p>
+										<p>(2544 Đánh giá)</p>
+									</div>
+									<div class="right">
+										<a href="#" class="dl-button-org" title="download">Download</a>
+										<p class="downtimes">254432 lượt tải</p>
+									</div>
+									<div class="sharetool">
+										<div class="addthis_native_toolbox"></div>
+									</div>
+									<p class="producer">Phát hành: <a href="#" title=""><strong>Tonec</strong></a></p>
+									<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
+									<p class="smallt"><strong>Lượt tải: </strong>9.453.521</p>
+									<p class="smallt"><strong>Phiên bản:</strong> 15.0.0.189</p>
+									<p  class="smallt"><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
+									<div class="tag"><strong>Tìm thêm: </strong>
+										<a href="#">Adobe Flash Player</a>
+										<a href="#">Adobte Flash Player 15</a> 
+										<a href="#">download Adobe Flash Player</a> 
+										<a href="#">tải Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player mới nhất</a> 
+										<a href="#">hỗ trợ trình duyệt.</a>
+									</div>
 								</div>
-								<div class="right">
-									<a href="#" class="button orange" title="download">Download</a>
-									<p class="downtimes">254432 lượt tải</p>
-								</div>
-								<div class="clear"></div>
-								<div class="sharetool">
-									<div class="addthis_native_toolbox"></div>
-								</div>
-								<p>Phát hành bởi <a href="#" title=""></a><strong>Tonec</strong></a></p>
-								<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
-								<p><strong>Lượt tải: </strong>9.453.521</p>
-								<p><strong>Phiên bản:</strong> 15.0.0.189</p>
-								<p><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
-								<div class="tag"><strong>Tìm thêm: </strong>
-									<a href="#">Adobe Flash Player</a>
-									<a href="#">Adobte Flash Player 15</a> 
-									<a href="#">download Adobe Flash Player</a> 
-									<a href="#">tải Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player mới nhất</a> 
-									<a href="#">hỗ trợ trình duyệt.</a>
+							</div>
+						</div>
+						<div class="app-block last">
+							<div class="app-block-content">
+								<h3 class="title"> WinRAR 5.20 Beta 2 Ứng dụng nén và giải nén file</h3>
+								<a href="#" title="" class="thumb"><img src="images/appicons/winrar.jpg" alt=""></a>
+								<div class="info">
+									<div class="left">
+										<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
+										<p><span class="ratings1"><span class="rating-per1" style="width:80%;"></span></span></p>
+										<p>(2544 Đánh giá)</p>
+									</div>
+									<div class="right">
+										<a href="#" class="dl-button-org" title="download">Download</a>
+										<p class="downtimes">254432 lượt tải</p>
+									</div>
+									<div class="clear"></div>
+									<div class="sharetool">
+										<div class="addthis_native_toolbox"></div>
+									</div>
+									<p class="producer">Phát hành: <a href="#" title=""><strong>Tonec</strong></a></p>
+									<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
+									<p class="smallt"><strong>Lượt tải: </strong>9.453.521</p>
+									<p class="smallt"><strong>Phiên bản:</strong> 15.0.0.189</p>
+									<p  class="smallt"><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
+									<div class="tag"><strong>Tìm thêm: </strong>
+										<a href="#">Adobe Flash Player</a>
+										<a href="#">Adobte Flash Player 15</a> 
+										<a href="#">download Adobe Flash Player</a> 
+										<a href="#">tải Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player</a> 
+										<a href="#">Adobe Flash Player mới nhất</a> 
+										<a href="#">hỗ trợ trình duyệt.</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="app-block">
-						<div class="app-block-content">
-							<h3 class="title">UniKey 4.2 RC4 Bộ gõ tiếng Việt phổ biến nhất</h3>
-							<a href="#" title="" class="thumb"><img src="images/unikey.jpg" alt=""></a>
-							<div class="info">
-								<div class="left">
-									<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
-									<p><span class="ratings"><span class="rating-per"></span></span></p>
-									<p>(2544 Đánh giá)</p>
-								</div>
-								<div class="right">
-									<a href="#" class="button orange" title="download">Download</a>
-									<p class="downtimes">254432 lượt tải</p>
-								</div>
-								<div class="clear"></div>
-								<div class="sharetool">
-									<div class="addthis_native_toolbox"></div>
-								</div>
-								<p>Phát hành bởi <a href="#" title=""></a><strong>Tonec</strong></a></p>
-								<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
-								<p><strong>Lượt tải: </strong>9.453.521</p>
-								<p><strong>Phiên bản:</strong> 15.0.0.189</p>
-								<p><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
-								<div class="tag"><strong>Tìm thêm: </strong>
-									<a href="#">Adobe Flash Player</a>
-									<a href="#">Adobte Flash Player 15</a> 
-									<a href="#">download Adobe Flash Player</a> 
-									<a href="#">tải Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player mới nhất</a> 
-									<a href="#">hỗ trợ trình duyệt.</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="app-block">
-						<div class="app-block-content">
-							<h3 class="title"> WinRAR 5.20 Beta 2 Ứng dụng nén và giải nén file</h3>
-							<a href="#" title="" class="thumb"><img src="images/winrar.jpg" alt=""></a>
-							<div class="info">
-								<div class="left">
-									<p><a href="#" title="" class="free-button">Free</a><a href="#" title="">Dùng thử</a></p>
-									<p><span class="ratings"><span class="rating-per"></span></span></p>
-									<p>(2544 Đánh giá)</p>
-								</div>
-								<div class="right">
-									<a href="#" class="button orange" title="download">Download</a>
-									<p class="downtimes">254432 lượt tải</p>
-								</div>
-								<div class="clear"></div>
-								<div class="sharetool">
-									<div class="addthis_native_toolbox"></div>
-								</div>
-								<p>Phát hành bởi <a href="#" title=""></a><strong>Tonec</strong></a></p>
-								<p>Bạn là người thích xem các bộ phim bom tấn nhưng lại ngại ra ngoài rạp? Hay bạn thích xem phim trên các trang chia sẻ nhưng lại chưa sắp xếp được thời gian ngồi xem? Internet Download Manager (IDM) sẽ hỗ trợ bạn download các bộ phim, video đó về máy mà không mất nhiều thời gian lẫn công sức!</p>
-								<p><strong>Lượt tải: </strong>9.453.521</p>
-								<p><strong>Phiên bản:</strong> 15.0.0.189</p>
-								<p><strong>Yêu cầu:</strong>Windows XP/2003/Vista/Server 2008/7/8</p>
-								<div class="tag"><strong>Tìm thêm: </strong>
-									<a href="#">Adobe Flash Player</a>
-									<a href="#">Adobte Flash Player 15</a> 
-									<a href="#">download Adobe Flash Player</a> 
-									<a href="#">tải Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player</a> 
-									<a href="#">Adobe Flash Player mới nhất</a> 
-									<a href="#">hỗ trợ trình duyệt.</a>
-								</div>
-							</div>
-						</div>
-					</div>
+
 				</div>
 				<div class="col-right">
 					<div class="block-adv">
@@ -415,7 +410,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -425,7 +420,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -435,7 +430,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -445,7 +440,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -455,7 +450,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -464,7 +459,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -474,7 +469,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -484,7 +479,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -494,7 +489,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -504,7 +499,7 @@
 									<h4 class="name-app">K-Lite Codec Pack 10.1.5</h4>
 									<p class="downtimes">4213623 lượt tải</p>
 									<div class="linkdown">
-										<a href="#" class="button blue" title="">Download</a>
+										<a href="#" class="dl-button-bl" title="">Download</a>
 										<a href="#" class="sharelink" title="">Chia sẻ link tải</a>
 									</div>
 								</div>
@@ -530,16 +525,47 @@
 	</div>
 	<div class="clear"></div>
 	<div class="footer-tags">
-		<a href="#">Download IDM </a><a href="#">Download Unikey</a><a href="#"> Download SopCast</a><a href="#"> Download Yahoo Chat</a><a href="#"> Truy cập Facebook</a><a href="#"> Download Chrome </a><a href="#">Download Firefox </a><a href="#">Download Winrar</a><a href="#"> Download AVG </a><a href="#">Download Avira</a>
+			<a href="#">Download IDM </a><a href="#">Download Unikey</a><a href="#"> Download SopCast</a><a href="#"> Download Yahoo Chat</a><a href="#"> Truy cập Facebook</a><a href="#"> Download Chrome </a><a href="#">Download Firefox </a><a href="#">Download Winrar</a><a href="#"> Download AVG </a><a href="#">Download Avira</a>
 	</div>
 	<div class="clear"></div>
 	<div id="footer">
-		<ul class="footer-menu">
-			<li><a href="#" title="">Home</a></li><li><a href="#" title="">GIỚI THIỆU </a></li><li><a href="#" title="">ĐIỀU KHOẢN SỬ DỤNG </a></li><li><a href="#" title="">CHÍNH SÁCH BẢO MẬT </a></li><li><a href="#" title="">DCMA </a></li><li><a href="#" title="">UPLOAD APPS, GAMES</a></li>
-		</ul>
-		<div class="copyright">
-			<p>Copyright 2014 Powered by X-Media J.S.C. All Rights Reserved.</p>
+		<div class="inner">
+			<ul class="footer-menu">
+				<li class="active"><a href="#" title="">Home</a></li><li><a href="#" title="">GIỚI THIỆU </a></li><li><a href="#" title="">ĐIỀU KHOẢN SỬ DỤNG </a></li><li><a href="#" title="">CHÍNH SÁCH BẢO MẬT </a></li><li><a href="#" title="">DCMA </a></li><li><a href="#" title="">UPLOAD APPS, GAMES</a></li>
+			</ul>
 		</div>
+		<div class="copyright">
+			<div class="inner">
+				<p>Copyright 2014 Powered by X-Media J.S.C. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+	<div id="pop-app">
+		<div class="block-title">
+			<h3>Ứng dụng tải lên</h3>
+			<span id="closepop"></span>
+		</div>
+		<div class="pop-app-slider">
+			<ul class="slides">
+				<li><a href="#" title="" class="thumb"><img src="images/appicons/app1.jpg" alt=""></a>
+					<div class="details">
+						<h4 class="name-app">Online RPG Avab game</h4>
+						<p class="com">Asobimo, Inc.</p>
+						<span class="ratings"><span style="width:80%;" class="rating-per"></span></span>
+						<a href="#" class="freeblack" title="">Miễn phí</a>
+					</div>
+				</li>
+				<li><a href="#" title="" class="thumb"><img src="images/appicons/app2.jpg" alt=""></a>
+					<div class="details">
+						<h4 class="name-app">Online RPG Avab game</h4>
+						<p class="com">Asobimo, Inc.</p>
+						<span class="ratings"><span class="rating-per" style="width:80%;"></span></span>
+						<a href="#" class="freeblack" title="">Miễn phí</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 </body>
 </html>

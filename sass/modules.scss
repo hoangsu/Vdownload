@@ -33,39 +33,48 @@ $Arial:     Arial, sans-serif, Verdana;
 a {color:inherit; text-decoration: none;}
 img {border:none; max-width: 100%;}
 li {list-style-type: none;}
-body {font:normal 15px $Arial; color:$black1; background: #e5e5e5;}
+body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: relative;}
 .inner {width:1000px; margin:auto;}
 .left {float:left;}.right {float: right;}
-.clear {clear:both;}
+.clear,.clearfix {clear:both;}
 .clearfix:after {content: "";display: table;clear: both;}
 .checkbox, .radio {
 	width: 19px;
 	height: 25px;
 	padding: 0 5px 0 0;
-	background: url(../images/checkbox.png) no-repeat;
+	background: url(../images/icons/checkbox.png) no-repeat;
 	display: block;
 	clear: left;
 	float: left;
 }
 .radio {
-	background: url(../images/radio.png) no-repeat;
+	background: url(../images/icons/radio.png) no-repeat;
 }
 .select {
 	position: absolute;
 	padding: 0 30px 0 10px;
-	background: url(../images/select.png) no-repeat right center;
+	background: url(../images/icons/select.png) no-repeat right center;
 	overflow: hidden;
 }
 #content {margin-top:15px; }
 .col-left {float: left; width: 212px; margin-right: 14px;}
 .main-content {width: 774px; float: left;}
 .col-right {float: right; width: 286px; margin-left: 14px;}
-.col-mid {width: 474px; float: left}
+.col-mid {width: 474px; float: left; background: #fff; }
 .block-title {background: $bluebg; height: 34px; line-height: 34px; padding: 0 10px; text-transform: uppercase; color:#fff;
 	h3 {font-weight: normal; font-size: 15px;}
 }
 .block, .block-adv {margin-bottom: 15px;}
 .block {background: #fff;}
 .ratings {background: url(../images/icons/no-rating1.png) repeat-x 0 0; height: 11px; display: block; width: 56px; margin:3px 0;
-	.rating-per {background: url(../images/icons/rating1.png) repeat-x 0 0; height: 11px; display: block;}
+    .rating-per {background: url(../images/icons/rating1.png) repeat-x 0 0; height: 11px; display: block;}
 }
+.ratings1 {background: url(../images/icons/no-rating.png) repeat-x 0 0; height: 18px; display: block; width: 90px; margin:5px 0;
+	.rating-per1 {background: url(../images/icons/rating.png) repeat-x 0 0; height: 18px; display: block;}
+}
+.free-button,.dl-button-org,.dl-button-bl,.freeblack {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
+.free-button {background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
+.dl-button-org {background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
+.dl-button-bl {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none;}
+.downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:15px; font-size: 14px;}
+.freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
