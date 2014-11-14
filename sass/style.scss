@@ -44,7 +44,7 @@
 	button{margin-top: -1px; border: none;float: right; background:url(../images/icons/search.png) no-repeat center center $bluebg; color:#fff; width: 98px; height: 42px; text-indent: -99999px; }
 }
 .main-menu { background: #2a2a2a; height: 55px;
-	li{float: left; padding:0 17px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f;
+	li{float: left; padding:0 17.3px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f;
 		img {vertical-align: middle; padding-right: 9px;}
 		&:hover,&.active {background: #424242;}
 		&:last-child {padding-right: 0; float: right;
@@ -162,7 +162,7 @@
 .footer-tags {@extend .clearfix; margin-top: 40px; text-align: center; padding:0 10px;
 	a {color: #0087c1; font-size: 14px; line-height: 22px;}
 }
-#footer {background: $black1; height: 120px;
+#footer {background: $black1; height: 120px; position: relative;
 	.footer-menu {  padding:33px 0; @extend .clearfix;
 		li{float: left; padding-left: 15px; margin-left: 15px; color: #e5e5e5; text-transform: uppercase;
 			&:hover,&.active {color: $bluebg;}
@@ -197,4 +197,16 @@
 			}
 		}
 	}
+}
+#up {position: absolute; right:0; top:-80px;}
+#contactlink {position: fixed; right:0; top:50%; margin-top: -72px;
+	.popup-form {display: none;}
+}
+.contact-form {@extend .clearfix; background: url(../images/contact.png) no-repeat 246px bottom;padding-bottom: 46px;margin-bottom: 21px;
+	input{width: 176px;
+		&:last-child {float: right;}
+	}
+}
+#register-ct.popup-form,#login-ct.popup-form {
+	input {width: 235px;}
 }

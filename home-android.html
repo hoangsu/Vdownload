@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 	<script type="text/javascript" src="js/custom-form-elements.js"></script>
 	<script type="text/javascript" src="js/vdownload.js"></script>
-	<title>Vdownload Home page</title>
+	<title>Vdownload Home page Android</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 		js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.0";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53352c0f0ecbc4cd" async="async"></script>
+
 
 	<div id="header">
 		<div class="top-header">
@@ -36,19 +36,17 @@
 				</ul>
 			</div>
 			<div id="register-ct" class="popup-form">
-				<div class="block-title">
-					<h3>Đăng ký</h3>
-				</div>
+				<h3 class="title">Đăng ký</h3>
 				<form action="#" method="post" accept-charset="utf-8">
-					<p><input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập"></p>
-					<p><input class="email" type="email" name="email" value="" placeholder="Email"></p>
-					<p><input class="password" type="password" name="password" value="" placeholder="Mật khẩu"></p>
-					<p><input class="repassword" type="password" name="repassword" value="" placeholder="Nhập lại mật khẩu"></p>
-					<p><button type="submit" class="blue-button"><span>Đăng ký</span></button></p><p>
+					<input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập">
+					<input class="email" type="email" name="email" value="" placeholder="Email">
+					<input class="password" type="password" name="password" value="" placeholder="Mật khẩu">
+					<input class="repassword" type="password" name="repassword" value="" placeholder="Nhập lại mật khẩu">
+					<button type="submit" class="dl-button-bl"><span>Đăng ký</span></button>
 				</form>
 				<div class="bottom-form">
-					<a class="inline dark-button" href="#login-ct" title="">Đăng nhập</a>
-					<a class="forgot-pass" href="#" title="">Quên mật khẩu?</a>
+					<a class='inline button darkgrey' href="#login-ct" title="">Đăng nhập</a>
+					<a class='' href="#" title="">Quên mật khẩu</a>
 					<div class="language-form">
 						<select name="language" class="styled">
 							<option>Tiếng việt</option>
@@ -58,22 +56,17 @@
 				</div>
 			</div>
 			<div id="login-ct" class="popup-form">
-				<div class="block-title">
-					<h3>Đăng Nhập</h3>
-				</div>
-				
+				<h3 class="title">Đăng Nhập</h3>
 				<form action="#" method="post" accept-charset="utf-8">
-					<p><input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập hoặc email"></p>
-					<p><input class="password" type="password" name="password" value="" placeholder="Mật khẩu"></p>
-					<p><input class="savepass styled" type="checkbox" name="savepass" checked="check">
-						<label for="savepass">Lưu mật khẩu?</label>
-					</p>
-					<p><button type="submit" class="blue-button"><span>Đăng Nhập</span></button></p>
+					<input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập hoặc email">
+					<input class="password" type="password" name="password" value="" placeholder="Mật khẩu">
+					<input class="savepass" type="checkbox" name="savepass" checked="check">
+					<button type="submit" class="dl-button-bl"><span>Đăng Nhập</span></button>
 				</form>
 				<div class="login-social">
 					<p>Hoặc đăng nhập bằng</p>
-					<a href="#" class="gplus-button" title=""><img src="images/gplogin.png" alt=""></a>
-					<a href="#" class="fb-button" title=""><img src="images/fblogin.png" alt=""></a>
+					<a href="#" class="gplus-button" title="">Google</a>
+					<a href="#" class="fb-button" title="">Facebook</a>
 				</div>
 				<div class="bottom-form">
 					<p>Bạn chưa có tài khoản?</p>
@@ -546,29 +539,7 @@
 				<p>Copyright 2014 Powered by X-Media J.S.C. All Rights Reserved.</p>
 			</div>
 		</div>
-		<div id="up">
-			<a href="#header" title="Trở lên"><img src="../images/up.png" alt=""></a>
-		</div>
 	</div>
-	<div id="contactlink">
-		<a href="#contact" class="inline"><img src="/images/contactlink.png" alt=""></a>
-		<div id="contact" class="popup-form">
-		<div class="block-title">
-			<h3>Contact Us</h3>
-		</div>
-		<div class="contact-form">
-			<form action="#" method="get" accept-charset="utf-8">
-				<p>
-					<input class="name" type="text" name="name" value="" placeholder="Your name">
-					<input class="email" type="email" name="email" value="" placeholder="Your Email address">
-				</p>
-					<p><textarea name="contact-text" class="textarea"></textarea></p>
-					<button type="submit" class="blue-button"><span>Send</span></button>
-			</form>
-		</div>
-	</div>
-	</div>
-	
 	<div id="pop-app">
 		<div class="block-title">
 			<h3>Ứng dụng tải lên</h3>

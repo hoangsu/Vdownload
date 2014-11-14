@@ -23,5 +23,5 @@ $(document).ready(function() {
 		slideshow: false
 
 	});
-	$(".inline").colorbox({inline:true, width:"40%"});
+	$(".inline").colorbox({inline:true, width:"auto"});
 });

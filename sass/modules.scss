@@ -38,17 +38,9 @@ body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: rel
 .left {float:left;}.right {float: right;}
 .clear,.clearfix {clear:both;}
 .clearfix:after {content: "";display: table;clear: both;}
-.checkbox, .radio {
-	width: 19px;
-	height: 25px;
-	padding: 0 5px 0 0;
-	background: url(../images/icons/checkbox.png) no-repeat;
-	display: block;
-	clear: left;
-	float: left;
-}
+.checkbox {width: 23px;height: 23px;padding: 0 5px 0 0;background: url(../images/icons/checkbox.png) no-repeat 0 0;display: block;clear: left;float: left;}
 .radio {
-	background: url(../images/icons/radio.png) no-repeat;
+	// background: url(../images/icons/radio.png) no-repeat;
 }
 .select {
 	position: absolute;
@@ -78,3 +70,25 @@ body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: rel
 .dl-button-bl {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none;}
 .downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:15px; font-size: 14px;}
 .freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
+.blue-button {background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
+.dark-button {display: inline-block; background: #343434; color: #fff; font-size: 13px; text-align: center; height: 29px; line-height: 29px; padding:0 8px; border-radius: 3px; border:none;}
+.popup-form {
+    form { padding:25px 38px;}
+    p {margin-bottom: 15px;}
+    input { border:1px solid #d9d8d8; height: 30px; line-height: 30px\9; padding-left: 40px; background: url(../images/icons/form.png) no-repeat 0 0; font-size: 13px; 
+        &.name {background-position: 0 0;}
+        &.email {background-position: 0 -42px;}
+        &.password {background-position: 0 -85px;}
+        &.repassword {background-position: 0 -127px;}
+        &.savepass + label {font-size: 12px; line-height: 23px;}
+    }
+    textarea { background: url(../images/icons/form.png) no-repeat 0 -167px; width: 100%; height: 110px; resize:none; padding:10px 10px 0 40px; border:1px solid #d9d8d8; box-sizing: border-box;}
+    .bottom-form {background:#dfdfdf; height: 28px; padding:9px 0 9px 12px; @extend .clearfix;
+        .dark-button {float: left;}
+        .forgot-pass {color: $red; font-size: 13px; margin-left: 10px; line-height: 28px; float: left;}
+        .language-form {float: right; display: inline-block; white-space: nowrap; min-width: 111px;
+            span.select{line-height: 28px; padding-right: 38px;}
+            select {height: 28px; width: 100%;}
+        }
+    }
+}
