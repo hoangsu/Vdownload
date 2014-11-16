@@ -19,9 +19,9 @@ body { font: normal 15px Arial, sans-serif, Verdana; color: #343434; background:
 
 .right { float: right; }
 
-.clear, .clearfix, #content, .tab-app, .startup, .startup .listpages, .mid-header .inner, .app-block .info .top-info, .most-download ul li, .adv-horizontal, .footer-tags, #footer .footer-menu, .popup-form .bottom-form, .contact-form, ul.apps-list, .top-content, .category-app, .detail-app, .related-app, .related-com, .popular-software ul, .mobile-tip-ct, .small-breadcrumb, .news2col { clear: both; }
+.clear, .clearfix, #content, .tab-app, .startup, .startup .listpages, .mid-header .inner, .app-block .info .top-info, .most-download ul li, .adv-horizontal, .footer-tags, #footer .footer-menu, .popup-form .bottom-form, .contact-form, ul.apps-list, .top-content, .category-app, .detail-app, .related-app, .related-com, .popular-software ul, .mobile-tip-ct, .small-breadcrumb, .news2col, .top-user .block-title, .top-user .list-user li, .tl-list-content li { clear: both; }
 
-.clearfix:after, #content:after, .tab-app:after, .startup:after, .startup .listpages:after, .mid-header .inner:after, .app-block .info .top-info:after, .most-download ul li:after, .adv-horizontal:after, .footer-tags:after, #footer .footer-menu:after, .popup-form .bottom-form:after, .contact-form:after, ul.apps-list:after, .top-content:after, .category-app:after, .detail-app:after, .related-app:after, .related-com:after, .popular-software ul:after, .mobile-tip-ct:after, .small-breadcrumb:after, .news2col:after { content: ""; display: table; clear: both; }
+.clearfix:after, #content:after, .tab-app:after, .startup:after, .startup .listpages:after, .mid-header .inner:after, .app-block .info .top-info:after, .most-download ul li:after, .adv-horizontal:after, .footer-tags:after, #footer .footer-menu:after, .popup-form .bottom-form:after, .contact-form:after, ul.apps-list:after, .top-content:after, .category-app:after, .detail-app:after, .related-app:after, .related-com:after, .popular-software ul:after, .mobile-tip-ct:after, .small-breadcrumb:after, .news2col:after, .top-user .block-title:after, .top-user .list-user li:after, .tl-list-content li:after { content: ""; display: table; clear: both; }
 
 .checkbox { width: 23px; height: 23px; padding: 0 5px 0 0; background: url(../images/icons/checkbox.png) no-repeat 0 0; display: block; clear: left; float: left; }
 
@@ -50,15 +50,19 @@ select option { padding-left: 5px; }
 .ratings1 { background: url(../images/icons/no-rating.png) repeat-x 0 0; height: 18px; display: block; width: 90px; margin: 5px 0; }
 .ratings1 .rating-per1 { background: url(../images/icons/rating.png) repeat-x 0 0; height: 18px; display: block; }
 
-.free-button, .dl-button-org, .continue-r, .dl-button-bl, .freeblack, .dl-button-black { display: inline-block; text-align: center; text-transform: uppercase; color: #fff; }
+.ul-button-green, .free-button, .dl-button-org, .continue-r, .dl-button-bl, .freeblack, .dl-button-black { display: inline-block; text-align: center; text-transform: uppercase; color: #fff; }
 
 .free-button { border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px; min-width: 30px; padding: 0 7px; font-size: 13px; }
 
-.dl-button-org, .continue-r { background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px; }
+.dl-button-org, .continue-r, .submit-org { background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px; }
+
+.submit-org { cursor: pointer; height: 29px; line-height: 29px; width: 81px; border: none; color: #fff; }
 
 .dl-button-bl, .dl-button-black { background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none; color: #fff; }
 
 .dl-button-black { background: #535353; }
+
+.ul-button-green { text-transform: none; background: url(../images/upload-green.png) repeat-x 0 0; color: #fff; width: 109px; height: 32px; line-height: 33px; }
 
 .continue-r { width: 98px; }
 
@@ -78,7 +82,7 @@ select option { padding-left: 5px; }
 
 .detail-ct { background: #fff; }
 
-.tab-app { margin-top: 20px; background: #e5e5e5; }
+.tab-app { margin-top: 5px; background: #e5e5e5; }
 .tab-app li { float: left; margin-right: 5px; color: #fff; background: #535353; text-align: center; height: 35px; padding: 0 25px; line-height: 35px; border-radius: 4px 4px 0 0; }
 .tab-app li.active { height: 41px; line-height: 41px; margin-top: -6px; background: #19a1db; font-size: 18px; }
 
@@ -432,3 +436,58 @@ ul.apps-list li .bottom a { color: #0087c1; float: right; line-height: 19px; tex
 .about .ab-content p { line-height: 30px; margin-bottom: 30px; }
 
 .sw-list { background: #fff; }
+
+/* Profile download */
+.left-profile { background: #fff; margin-bottom: 15px; }
+.left-profile .title { border-bottom: 1px solid #ccc; padding: 7px 10px; line-height: 30px; }
+.left-profile .title img { border: 1px solid #878787; border-radius: 7px; margin-right: 5px; vertical-align: middle; }
+.left-profile ul { padding: 10px 10px 15px 15px; }
+.left-profile ul li { line-height: 32px; }
+.left-profile ul li a { padding-left: 40px; background: url(../images/left-profile.png) no-repeat 0 0; }
+.left-profile ul li a:hover, .left-profile ul li a.active { color: #0087c1; }
+.left-profile ul li a.cd { background-position: 0 0; }
+.left-profile ul li a.cd:hover, .left-profile ul li a.active { background-position: 0 -182px; }
+.left-profile ul li a.ul { background-position: 0 -36px; }
+.left-profile ul li a.ul:hover, .left-profile ul li a.active { background-position: 0 -218px; }
+.left-profile ul li a.dl { background-position: 0 -71px; }
+.left-profile ul li a.dl:hover, .left-profile ul li a.active { background-position: 0 -253px; }
+.left-profile ul li a.tv { background-position: 0 -99px; }
+.left-profile ul li a.tv:hover { background-position: 0 -281px; }
+.left-profile ul li a.dd { background-position: 0 -134px; }
+.left-profile ul li a.dd:hover, .left-profile ul li a.active { background-position: 0 -316px; }
+
+.top-user .block-title h3 { font-weight: bold; }
+.top-user .block-title h3 span { font-size: 13px; float: right; text-transform: none; }
+.top-user .list-user { padding: 10px; }
+.top-user .list-user li { margin-bottom: 12px; }
+.top-user .list-user li img { float: left; margin-right: 7px; width: 40px; height: 40px; }
+.top-user .list-user li a { text-transform: capitalize; }
+.top-user .list-user li span.point { font-size: 12px; display: inline-block; width: 145px; }
+
+.requesttl form { padding: 7px 7px 20px; }
+.requesttl form input, .requesttl form select, .requesttl form textarea { height: 24px; line-height: 24px\9; border: 1px solid #dcdcdc; padding: 0 5px; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; margin-bottom: 10px; font-size: 12px; }
+.requesttl form textarea { resize: none; line-height: normal; padding: 5px; height: 143px; }
+.requesttl form .infosp { font-size: 13px; margin: 5px 0; }
+.requesttl form .infosp a { color: #0087c1; }
+
+.tl-list { background: #fff; }
+.tl-list .breadcrumb { margin: 0; padding: 7px 0 0 15px; overflow: hidden; }
+
+.tl-list-content { padding-bottom: 20px; }
+.tl-list-content li { padding: 15px 25px; border-bottom: 1px solid #ccc; }
+.tl-list-content li:first-child { border-top: 1px solid #ccc; }
+.tl-list-content li .thumb img { width: 107px; height: 144px; margin-right: 40px; float: left; }
+.tl-list-content li .detail h3.title { font-size: 18px; margin-bottom: 5px; font-weight: normal; }
+.tl-list-content li .detail a { color: #0087c1; }
+.tl-list-content li .detail p { margin-bottom: 5px; }
+
+.tv-list-content li .thumb img { width: 127px; height: 173px; border: 1px solid #e5e5e5; margin-right: 30px; }
+.tv-list-content li .detail { overflow: hidden; }
+
+.reading-bar { background: #d2d2d2; height: 10px; margin: 8px 0; width: 223px; border-radius: 7px; }
+.reading-bar .percent { background: #19a1db; height: 10px; border-radius: 7px 0 0 7px; }
+
+.upload-content { background: #fff; }
+.upload-content .title { border: 1px solid #e5e5e5; height: 43px; line-height: 43px; padding-left: 60px; padding-right: 15px; }
+.upload-content .title p { display: inline-block; float: left; line-height: 43px; }
+.upload-content .title a.ul-button-green { float: right; margin: 5px 0; }

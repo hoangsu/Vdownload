@@ -488,3 +488,82 @@ ul.apps-list {  @extend .clearfix;
 	}
 }
 .sw-list {background: #fff;}
+/* Profile download */
+.left-profile { background: #fff; margin-bottom: 15px;
+	.title {border-bottom: 1px solid #ccc; padding: 7px 10px; line-height: 30px;
+		img {border:1px solid #878787; border-radius: 7px; margin-right: 5px; vertical-align: middle;}
+	}
+	ul { padding:10px 10px 15px 15px ;
+		li {line-height: 32px; 
+			a { padding-left: 40px; background: url(../images/left-profile.png) no-repeat 0 0;
+				&:hover,&.active{color: $bluelink;}
+				&.cd {background-position: 0 0;}
+				&.cd:hover,&.active {background-position: 0 -182px;}
+				&.ul {background-position: 0 -36px;}
+				&.ul:hover,&.active {background-position: 0 -218px;}
+				&.dl {background-position: 0 -71px;}
+				&.dl:hover,&.active{background-position: 0 -253px;}
+				&.tv {background-position: 0 -99px;}
+				&.tv:hover {background-position: 0 -281px;}
+				&.dd {background-position: 0 -134px;}
+				&.dd:hover,&.active {background-position: 0 -316px;}
+			}
+		}
+	}
+}
+.top-user {
+	.block-title {@extend .clearfix;
+		h3 {font-weight: bold;
+			span {font-size:13px; float: right; text-transform: none;}
+		}
+	}
+	.list-user { padding:10px;
+		li { margin-bottom: 12px; @extend .clearfix;
+			img {float: left; margin-right: 7px; width: 40px; height: 40px;}
+			a {text-transform: capitalize;}
+			span.point {font-size: 12px; display: inline-block; width: 145px;}
+		}
+	}
+}
+.requesttl {
+	form {padding:7px 7px 20px;
+		input,select,textarea {height: 24px; line-height: 24px\9; border:1px solid #dcdcdc;padding:0 5px; width: 100%; @include box-sizing(border-box); margin-bottom: 10px; font-size: 12px;}
+		textarea {resize: none;line-height: normal; padding:5px; height: 143px;}
+		.infosp {font-size: 13px; margin:5px 0;
+			a {color: $bluelink;}
+		}
+	}
+}
+.tl-list {background: #fff; 
+	.breadcrumb {margin:0; padding:7px 0 0 15px; overflow: hidden;}
+}
+.tl-list-content { padding-bottom: 20px;
+	li {padding:15px 25px; border-bottom: 1px solid #ccc; @extend .clearfix;
+		&:first-child {border-top: 1px solid #ccc;}
+		.thumb {
+			img {width: 107px; height: 144px; margin-right:40px; float: left; }
+		}
+		.detail {
+			h3.title {font-size: 18px; margin-bottom: 5px; font-weight: normal;}
+			a {color: $bluelink;}
+			p {margin-bottom: 5px;}
+		}
+	}	
+}
+.tv-list-content {
+	li {
+		.thumb {
+			img {width: 127px; height: 173px; border:1px solid #e5e5e5; margin-right: 30px;}
+		}
+		.detail {overflow: hidden;}
+	}
+}
+.reading-bar {background: #d2d2d2; height: 10px; margin:8px 0; width: 223px; border-radius: 7px;
+	.percent {background:#19a1db; height: 10px; border-radius:7px 0 0 7px }
+}
+.upload-content {background: #fff;
+	.title { border:1px solid #e5e5e5; height: 43px; line-height: 43px; padding-left: 60px; padding-right: 15px;
+		p {display: inline-block; float: left; line-height: 43px;}
+		a.ul-button-green {float: right; margin:5px 0;}
+	}
+}

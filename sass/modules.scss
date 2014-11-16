@@ -65,11 +65,13 @@ select option {padding-left: 5px;}
 .ratings1 {background: url(../images/icons/no-rating.png) repeat-x 0 0; height: 18px; display: block; width: 90px; margin:5px 0;
 	.rating-per1 {background: url(../images/icons/rating.png) repeat-x 0 0; height: 18px; display: block;}
 }
-.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
+.ul-button-green,.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
 .free-button {border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
-.dl-button-org {background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
+.dl-button-org,.submit-org{background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
+.submit-org {cursor: pointer; height: 29px; line-height: 29px; width: 81px; border: none; color: #fff; }
 .dl-button-bl,.dl-button-black {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none; color: #fff;}
 .dl-button-black {background: #535353;}
+.ul-button-green {text-transform: none; background: url(../images/upload-green.png) repeat-x 0 0; color: #fff;width: 109px; height: 32px; line-height: 33px;}
 .continue-r {@extend .dl-button-org; width: 98px;}
 .downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:15px; font-size: 14px;}
 .freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
@@ -82,7 +84,7 @@ select option {padding-left: 5px;}
     .addthis_default_style .addthis_counter {float: none !important}
 }
 .detail-ct {background: #fff;}
-.tab-app {@extend .clearfix; margin-top: 20px; background: #e5e5e5;
+.tab-app {@extend .clearfix; margin-top: 5px; background: #e5e5e5;
     li{float: left; margin-right: 5px; color: #fff; background:#535353; text-align: center; height: 35px; padding:0 25px; line-height: 35px; border-radius: 4px 4px 0 0;
         &.active {height: 41px; line-height: 41px; margin-top: -6px; background: #19a1db; font-size: 18px;}
     }

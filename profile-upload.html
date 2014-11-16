@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 	<script type="text/javascript" src="js/custom-form-elements.js"></script>
 	<script type="text/javascript" src="js/vdownload.js"></script>
-	<title>Về chúng tôi</title>
+	<title>Profile Upload</title>
 </head>
 
 <body>
@@ -29,9 +29,8 @@
 				<ul>
 					<li><a href="facebook.com/vdownload"><img src="images/icons/fb.png" alt=""></a></li>
 					<li><a href="twitter.com/vdownload"><img src="images/icons/tw.png" alt=""></a></li>
-					<li class="register"><a class='inline' href="#register-ct" title="">Đăng ký</a></li>
-					<li class="login"><a class='inline' href="#login-ct" title="">Đăng nhập</a></li>
-					
+					<li class="upload"><a href="#">Upload</a></li>
+					<li class="user"><a href="#"><img src="images/user.jpg" alt=""></a></li>
 				</ul>
 			</div>
 			<div id="register-ct" class="popup-form">
@@ -126,36 +125,56 @@
 	</div>
 	<div id="content">
 		<div class="inner">
-			<div class="col-left">
-				<div class="block block-about block-top">
-					<div class="block-title"><h3>Về chúng tôi</h3></div>
-					<ul>
-						<li><a href="#" class="active">Giới thiệu</a></li>
-						<li><a href="#">Điều khoản sử dụng</a></li>
-						<li><a href="#">Chính sách bảo mật</a></li>
-						<li><a href="#">Liên hệ</a></li>
-						<li><a href="#">Thông báo DCMA</a></li>
-					</ul>
+			<div class="upload-content">
+				<div class="title">
+					<p>Không tệp tin nào được chọn</p>
+					<a href="#3" class="upload-click ul-button-green" title="">Chọn tệp tin</a>
 				</div>
-				
-				<div class="fanpage block">
-					<div class="block-title"><h3>Fanpage for Android</h3></div>
-					<div class="fb-like-box" data-href="https://www.facebook.com/AndroidStoreVietnam" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true" data-width="212px"></div>
-				</div>
-			</div>
-			<div class="main-content">
-				<div class="about">
-					<div class="block-title">
-						<h3>Giới thiệu</h3>
-					</div>
-					<div class="ab-content">
-						<p><a href="index.html" title=""><img src="images/nv.jpg" alt=""></a></p>
-						<p>Netviet Media là đơn vị sở hữu và quản lý các website Vdownload.com, ...là những website những giới thiệu, đánh giá phần mềm; cung cấp các hướng dẫn về: Phần mềm, máy tính, điện thoại, mạng internet. Tất cả các nội dung trên các website đều được cung cấp miễn phí tới người dùng cuối</p>
-						<p>Nếu cần bạn có thể liên hệ với chúng tôi theo thông tin Tại đây, hoặc ghé thăm website của chúng tôi: <a href="http://netvietmedia.vn" title="">http://netvietmedia.vn</a></p>
-					</div>
+				<div class="upload-form">
+					<form action="#" method="get" accept-charset="utf-8">
+						<div class="img-left">
+							<a href="#3" class="upload-click" title="">
+								<img src="images/upload.jpg" alt="">
+							</a>
+						</div>
+						<div class="right-form">
+							<p>Định dạng file hỗ trợ:<em> pdf, doc, docx, xls, xlsx, ppt</em></p>
+							<label>Tiêu đề <span>*</span></label>
+							<input type="text" name="subject" value="" placeholder="">
+							<label>Mô tả<span>*</span></label>
+							<textarea name="desc"></textarea>
+							<div class="wide">
+								<div class="left">
+									<label>Lựa chọn tài liệu <span>*</span></label>
+								<select name="tl">
+									<option value="">Chọn tài liệu</option>
+									<option value="">tài liệu 1</option>
+								</select>
+								</div>
+								<div class="right">
+									<label>Lựa chọn Chuyên mục <span>*</span></label>
+								<select name="cm">
+									<option value="">Chọn Chuyên mục</option>
+									<option value="">chuyên mục 1</option>
+								</select>
+								</div>
+							</div>
+							<p>Từ khóa  <small>(Tối thiểu 5 từ khóa và ngăn cách bởi dấu chấm phẩy)</small></p>
+							<select name="cd">
+									<option value="">Hạy chọn chủ đề</option>
+									<option value="">chủ đề 1</option><option value="">chủ đề 2</option>
+							</select>
+							<button class="submit-org" type="submit">UPLOAD</button>
+						</div>
+					</form>
+					
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer-tags">
+			<a href="#">Download IDM </a><a href="#">Download Unikey</a><a href="#"> Download SopCast</a><a href="#"> Download Yahoo Chat</a><a href="#"> Truy cập Facebook</a><a href="#"> Download Chrome </a><a href="#">Download Firefox </a><a href="#">Download Winrar</a><a href="#"> Download AVG </a><a href="#">Download Avira</a>
 	</div>
 	<div class="clear"></div>
 	<div id="footer">
