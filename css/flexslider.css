@@ -46,14 +46,13 @@ html[xmlns] .slides {display: block;}
 .carousel li { margin-right: 5px; }
 
 /* Direction Nav */
-/* Direction Nav */
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
-.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
-.flex-direction-nav .flex-prev {left: -36px;}
+.flex-direction-nav a {width: 22px; height: 42px; margin: -21px 0 0; display: block; background: url(../images/icons/next-pre.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 0 bottom; right: 0px; }
+.flex-direction-nav .flex-prev {left: 0px;}
 .flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
-.flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+.flex-direction-nav .flex-disabled {/*opacity: .3!important; filter:alpha(opacity=30); */display: none; cursor: default;}
 /* Pause/Play */
 .flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
 .flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }

@@ -48,9 +48,10 @@ body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: rel
 	background: url(../images/icons/select.png) no-repeat right center;
 	overflow: hidden;
 }
-#content {margin-top:15px; }
-.col-left {float: left; width: 212px; margin-right: 14px;}
-.main-content {width: 774px; float: left;}
+select option {padding-left: 5px;}
+#content { @extend .clearfix;}
+.col-left {float: left; width: 212px; margin-right: 14px;margin-top:15px;}
+.main-content {width: 774px; float: left;margin-top:15px;}
 .col-right {float: right; width: 286px; margin-left: 14px;}
 .col-mid {width: 474px; float: left; background: #fff; }
 .block-title {background: $bluebg; height: 34px; line-height: 34px; padding: 0 10px; text-transform: uppercase; color:#fff;
@@ -64,31 +65,39 @@ body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: rel
 .ratings1 {background: url(../images/icons/no-rating.png) repeat-x 0 0; height: 18px; display: block; width: 90px; margin:5px 0;
 	.rating-per1 {background: url(../images/icons/rating.png) repeat-x 0 0; height: 18px; display: block;}
 }
-.free-button,.dl-button-org,.dl-button-bl,.freeblack {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
-.free-button {background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
+.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
+.free-button {border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
 .dl-button-org {background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
-.dl-button-bl {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none;}
+.dl-button-bl,.dl-button-black {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none; color: #fff;}
+.dl-button-black {background: #535353;}
+.continue-r {@extend .dl-button-org; width: 98px;}
 .downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:15px; font-size: 14px;}
 .freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
 .blue-button {background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
 .dark-button {display: inline-block; background: #343434; color: #fff; font-size: 13px; text-align: center; height: 29px; line-height: 29px; padding:0 8px; border-radius: 3px; border:none;}
-.popup-form {
-    form { padding:25px 38px;}
-    p {margin-bottom: 15px;}
-    input { border:1px solid #d9d8d8; height: 30px; line-height: 30px\9; padding-left: 40px; background: url(../images/icons/form.png) no-repeat 0 0; font-size: 13px; 
-        &.name {background-position: 0 0;}
-        &.email {background-position: 0 -42px;}
-        &.password {background-position: 0 -85px;}
-        &.repassword {background-position: 0 -127px;}
-        &.savepass + label {font-size: 12px; line-height: 23px;}
-    }
-    textarea { background: url(../images/icons/form.png) no-repeat 0 -167px; width: 100%; height: 110px; resize:none; padding:10px 10px 0 40px; border:1px solid #d9d8d8; box-sizing: border-box;}
-    .bottom-form {background:#dfdfdf; height: 28px; padding:9px 0 9px 12px; @extend .clearfix;
-        .dark-button {float: left;}
-        .forgot-pass {color: $red; font-size: 13px; margin-left: 10px; line-height: 28px; float: left;}
-        .language-form {float: right; display: inline-block; white-space: nowrap; min-width: 111px;
-            span.select{line-height: 28px; padding-right: 38px;}
-            select {height: 28px; width: 100%;}
-        }
+
+.setup-button {border-radius: 2px; display: inline-block; background:$bluebg; font-size: 15px; text-transform: uppercase; height: 35px; line-height: 35px; width: 90px; text-align: center; color: #fff;}
+.sharetool {white-space: nowrap; display: inline-block; margin:5px 0; width: 310px; height: 25px; 
+    a.addthis_button_google_plusone > div{width: 60px !important}
+    .addthis_default_style .addthis_counter {float: none !important}
+}
+.detail-ct {background: #fff;}
+.tab-app {@extend .clearfix; margin-top: 20px; background: #e5e5e5;
+    li{float: left; margin-right: 5px; color: #fff; background:#535353; text-align: center; height: 35px; padding:0 25px; line-height: 35px; border-radius: 4px 4px 0 0;
+        &.active {height: 41px; line-height: 41px; margin-top: -6px; background: #19a1db; font-size: 18px;}
     }
 }
+.tab-container {padding:15px; background: #fff;}
+.tab-content {display: none;
+    &.active {display: block}
+}
+.desc-text {
+    h4 {color:$bluelink; margin-bottom: 5px;}
+    p{margin-bottom: 10px;}
+    ul,ol {
+        li {list-style-type: inherit;}
+    }
+}
+a.viewless, a.viewmore {color: $bluelink; }
+a.viewless {display: none;}
+.slider4 {position: relative; padding:0 34px 15px; }
