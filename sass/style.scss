@@ -273,13 +273,14 @@ ul.apps-list {  @extend .clearfix;
 		&.active {background: url(../images/icons/title-top.png) no-repeat 96% center $bluebg; color:#fff; padding-left:23px; text-align: left; }
 	}
 }
-.breadcrumb {margin-top: 20px;
+.breadcrumb {margin-top: 20px; background: #fff; @extend .clearfix;
 	li {float: left; display: inline-block; margin-right: 10px; line-height: 30px;
 		&:after {content:"\203A"; padding-left: 7px;}
 		.home {background: url(../images/icons/home.png) no-repeat 0 0; display: inline-block;width: 22px; height: 20px;}
 		&:last-child {
 			&:after{content:""}
 		}
+		span {color: $bluelink;}
 	}
 }
 
@@ -588,7 +589,7 @@ ul.apps-list {  @extend .clearfix;
 /* Tai lieu */
 .documents {background: #fff; @extend .clearfix;
 	.tl-banner {margin-bottom: 15px 10px;}
-	h3.title {text-transform: uppercase; border-bottom: 1px solid #ccc; line-height: 25px; padding-left: 15px; font-size: 15px;padding-top:  5px; margin-bottom: 25px;}
+	h3.title {text-transform: uppercase; border-bottom: 1px solid #ddd; line-height: 25px; padding-left: 15px; font-size: 15px;padding-top:  5px; margin-bottom: 25px;}
 	.slider4 { margin:15px 10px; padding:0 27px 15px;
 		.slides {
 			li {margin:0 5px; @include box-sizing(border-box); text-align: center;
@@ -597,6 +598,7 @@ ul.apps-list {  @extend .clearfix;
 				p.author {color: #6b6b6b;font-size: 11px;}
 			}
 		}
+		.flex-direction-nav a {top:100px;}
 	}
 	
 }
@@ -605,3 +607,79 @@ ul.apps-list {  @extend .clearfix;
 	ul {max-height: 314px; overflow: hidden;}
 	.viewmore,.viewless  {padding-left: 15px; margin-top: 10px;}
 }
+.tipcp-list {
+	li{ margin-bottom: 15px; @extend .clearfix;
+		.thumb {
+			img {float: left; width:86px; height: 86px; border-radius: 5px; margin-right: 20px;}
+		}
+		.detail {
+			h3 {font-size: 17px; margin-bottom: 5px;}
+		}
+	}
+}
+/* Sach detail */
+.documents-detail {background: #fff;  @extend .clearfix;
+	.breadcrumb {padding-left: 15px; margin-top: 0;}
+}
+.documents-detail-ct {padding:20px; border-top: 1px solid #e5e5e5;
+	.img-left {
+		img {width: 208px; height: 284px; float: left; margin-right:20px; }
+	}
+	.detail {
+		h1.sname {font-size: 30px; margin-bottom: 10px;}
+		p{ margin-bottom: 10px;
+			a {color: $bluelink;}
+		}
+		.wishlist-button {margin-left: 10px;}
+	}
+	.sharetool {margin-top: 15px; width: auto;}
+}
+.sdct {
+	h3.title {border-bottom:1px solid #e5e5e5; font-size: 15px;  margin: 20px 0; text-transform: uppercase;}
+	h1 {font-size: 20px; margin-bottom: 15px;}
+	p {line-height: 30px; margin-bottom: 20px;}
+}
+/* Doc sach */
+#header-book{
+	height: 55px; background: #2a2a2a; @extend .clearfix;
+	.backhome {float: left; margin:10px 0 12px 13px;}
+	.right {width: 188px;}
+}
+.text-size{height: 55px;position: relative; float: left;
+	#aa {float:left;color: #fff; display: inline-block;width: 88px; line-height: 55px; font-size: 30px; background: url(../images/r-ar.png) no-repeat 47px center;}
+	ul {display: none; position: absolute; top:55px; left:0; width: 100%; background-color: #fff; 
+		li {border-bottom: 1px solid #ddd; padding:5px 10px;
+			&:hover {color: $bluelink;}
+		}
+	}
+} 
+.iconmenu {float: right; background: url(../images/label.png) no-repeat right 0;  width: 100px;
+	a { margin:10px 0 12px 13px; display: inline-block; float: left;}
+}
+.content-book { @extend .clearfix; margin-top: 15px;
+	.inner  {background: #fff;}
+	.top {border-bottom:1px solid #e5e5e5; height: 32px;
+		.breadcrumb {float: left; margin:0 0 0 20px;}
+		.sharetool {margin:5px}
+	}
+}
+.reading { padding:15px 20px; @extend .clearfix; 
+	.left-book {min-height: 500px;width: 49%; padding-right: 20px; padding-bottom: 10px; border-right: 1px solid #ddd; float: left;@include box-sizing(border-box);}
+	.right-book {float: left;min-height: 500px; padding:0 20px 10px; width: 50%; @include box-sizing(border-box);
+		.pageone {padding-left:84px;
+		}
+		p,li {margin-bottom: 10px; }
+	}
+}
+.reading-bar-bottom {margin-top: 10px;height: 59px;width: 100%; background: #525252; color: #fff; @include box-sizing(border-box); padding:19px 25px 9px; 
+	.bar {background:#9e9e9e; height:3px; position: relative;
+		&:before,&:after {top:-3px;background: url(../images/pull.png); content:""; height: 10px;width: 10px; display: inline-block; position: absolute;}
+		&:before {left:-10px; }
+		&:after {right:-10px}
+		.handle {cursor: move; width: 23px; height: 23px; background:url(../images/handle.png) no-repeat 0 0; position: absolute; top:-10px;}
+	}
+	.pagen { @extend .clearfix; 
+			h3 {font-size:18px; font-weight: normal; text-align: center;margin-top: 7px; }
+			p { margin-top: -15px;}
+		}
+ }

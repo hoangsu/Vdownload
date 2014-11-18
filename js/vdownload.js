@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	$(".text-size #aa").click(function(event) {
+	$(this).next('ul').slideToggle();
+	});
 	$('.home-slider').flexslider({
 		animation: "slide",
 		controlNav: "thumbnails",
@@ -15,6 +18,9 @@ $(document).ready(function() {
 	flexSlider(".featured-documents",126,12,5);
 	flexSlider(".newest-documents",126,12,5);
 	flexSlider(".best-documents",126,12,5);
+	flexSlider(".interested-documents",126,12,5);
+	flexSlider(".samecat-documents",126,12,5);
+	flexSlider(".sameau-documents",126,12,5);
 	$("#closepop").click(function(event) {
 		$(this).parent().parent("#pop-app").hide('slow');
 	});
@@ -34,6 +40,7 @@ $(document).ready(function() {
 		$('#uploadfile').click();
 	});
 	$(".inline").colorbox({inline:true, width:"auto"});
+
 });
 function viewMoreText(Parent,mHeight){
 	$(Parent).find("a.viewmore").click(function() {

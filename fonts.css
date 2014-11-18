@@ -1,0 +1,24 @@
+
+/* @font-face {
+    font-family: 'helveticaneue';
+    src: url('../fonts/helveticaneue-regular-webfont.eot');
+    src: url('../fonts/helveticaneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-regular-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-regular-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-regular-webfont.svg#helveticaneue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaneue';
+    src: url('../fonts/helveticaneue-medium-webfont.eot');
+    src: url('../fonts/helveticaneue-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-medium-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-medium-webfont.svg#helveticaneue') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+$helveticaneue:   'helveticaneue', Arial, sans-serif; */

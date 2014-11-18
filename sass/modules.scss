@@ -3,29 +3,6 @@ $bluelink: #0087c1;
 $red : #ea0000;
 $black1: #343434;
 
-/* @font-face {
-    font-family: 'helveticaneue';
-    src: url('../fonts/helveticaneue-regular-webfont.eot');
-    src: url('../fonts/helveticaneue-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-regular-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-regular-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-regular-webfont.ttf') format('truetype'),
-         url('../fonts/helveticaneue-regular-webfont.svg#helveticaneue') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'helveticaneue';
-    src: url('../fonts/helveticaneue-medium-webfont.eot');
-    src: url('../fonts/helveticaneue-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneue-medium-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-medium-webfont.woff') format('woff'),
-         url('../fonts/helveticaneue-medium-webfont.ttf') format('truetype'),
-         url('../fonts/helveticaneue-medium-webfont.svg#helveticaneue') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-$helveticaneue:   'helveticaneue', Arial, sans-serif; */
 $Arial:     Arial, sans-serif, Verdana;
 @mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
 @mixin border-radius($radius) {border-radius: $radius;}
@@ -39,15 +16,8 @@ body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: rel
 .clear,.clearfix {clear:both;}
 .clearfix:after {content: "";display: table;clear: both;}
 .checkbox {width: 23px;height: 23px;padding: 0 5px 0 0;background: url(../images/icons/checkbox.png) no-repeat 0 0;display: block;clear: left;float: left;}
-.radio {
-	// background: url(../images/icons/radio.png) no-repeat;
-}
-.select {
-	position: absolute;
-	padding: 0 30px 0 10px;
-	background: url(../images/icons/select.png) no-repeat right center;
-	overflow: hidden;
-}
+.radio {/* background: url(../images/icons/radio.png) no-repeat; */}
+.select {position: absolute;padding: 0 30px 0 10px;background: url(../images/icons/select.png) no-repeat right center;overflow: hidden;}
 select option {padding-left: 5px;}
 #content { @extend .clearfix;}
 .col-left {float: left; width: 212px; margin-right: 14px;margin-top:15px;}
@@ -67,7 +37,7 @@ select option {padding-left: 5px;}
 }
 .ul-button-green,.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
 .free-button {border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
-.dl-button-org,.submit-org{background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
+.dl-button-org,.submit-org{border-radius: 2px; background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
 .submit-org {cursor: pointer; height: 29px; line-height: 29px; width: 81px; border: none; color: #fff; }
 .dl-button-bl,.dl-button-black {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none; color: #fff;}
 .dl-button-black {background: #535353;}
@@ -77,8 +47,9 @@ select option {padding-left: 5px;}
 .freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
 .blue-button {background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
 .dark-button {display: inline-block; background: #343434; color: #fff; font-size: 13px; text-align: center; height: 29px; line-height: 29px; padding:0 8px; border-radius: 3px; border:none;}
-
+.wishlist-button {display: inline-block; background: url(../images/wishlist.png) repeat-x 0 center; color: #fff; text-align: center; height: 32px; line-height: 32px; padding:0 15px; border-radius: 3px; border:none;}
 .setup-button {border-radius: 2px; display: inline-block; background:$bluebg; font-size: 15px; text-transform: uppercase; height: 35px; line-height: 35px; width: 90px; text-align: center; color: #fff;}
+
 .sharetool {white-space: nowrap; display: inline-block; margin:5px 0; width: 310px; height: 25px; 
     a.addthis_button_google_plusone > div{width: 60px !important}
     .addthis_default_style .addthis_counter {float: none !important}
