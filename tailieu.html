@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/flexslider.css"/>
+	<link rel="stylesheet" href="css/colorbox.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js" ></script>
+	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="js/custom-form-elements.js"></script>
+	<script type="text/javascript" src="js/vdownload.js"></script>
+	<title>Vdownload Tài liệu</title>
+</head>
+
+<body>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53352c0f0ecbc4cd" async="async"></script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="header">
+		<div class="top-header">
+			<div class="inner">
+				<ul>
+					<li><a href="facebook.com/vdownload"><img src="images/icons/fb.png" alt=""></a></li>
+					<li><a href="twitter.com/vdownload"><img src="images/icons/tw.png" alt=""></a></li>
+					<li class="register"><a class='inline' href="#register-ct" title="">Đăng ký</a></li>
+					<li class="login"><a class='inline' href="#login-ct" title="">Đăng nhập</a></li>
+					
+				</ul>
+			</div>
+			<div id="register-ct" class="popup-form">
+				<div class="block-title">
+					<h3>Đăng ký</h3>
+				</div>
+				<form action="#" method="post" accept-charset="utf-8">
+					<p><input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập"></p>
+					<p><input class="email" type="email" name="email" value="" placeholder="Email"></p>
+					<p><input class="password" type="password" name="password" value="" placeholder="Mật khẩu"></p>
+					<p><input class="repassword" type="password" name="repassword" value="" placeholder="Nhập lại mật khẩu"></p>
+					<p><button type="submit" class="blue-button"><span>Đăng ký</span></button></p><p>
+				</form>
+				<div class="bottom-form">
+					<a class="inline dark-button" href="#login-ct" title="">Đăng nhập</a>
+					<a class="forgot-pass" href="#" title="">Quên mật khẩu?</a>
+					<div class="language-form">
+						<select name="language" class="styled">
+							<option>Tiếng việt</option>
+							<option>English</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="login-ct" class="popup-form">
+				<div class="block-title">
+					<h3>Đăng Nhập</h3>
+				</div>
+				
+				<form action="#" method="post" accept-charset="utf-8">
+					<p><input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập hoặc email"></p>
+					<p><input class="password" type="password" name="password" value="" placeholder="Mật khẩu"></p>
+					<p><input class="savepass styled" type="checkbox" name="savepass">
+						<label for="savepass">Lưu mật khẩu?</label>
+					</p>
+					<p><button type="submit" class="blue-button"><span>Đăng Nhập</span></button></p>
+				</form>
+				<div class="login-social">
+					<p class="divide"><span>Hoặc đăng nhập bằng</span></p>
+					<a href="#" class="gplus-button" title=""><img src="images/gplogin.png" alt=""></a>
+					<a href="#" class="fb-button" title=""><img src="images/fblogin.png" alt=""></a>
+				</div>
+				<div class="bottom-form">
+					<p>Bạn chưa có tài khoản?</p>
+					<a class='inline button dark-button' href="#register-ct" title="">Đăng ký</a>
+					<div class="language-form">
+						<select name="language" class="styled">
+							<option>Tiếng việt</option>
+							<option>English</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid-header">
+			<div class="inner">
+				<h1 class="logo"><strong>Vdownload.com</strong>
+					<a href="/" title="Vdownload.com" class="logo-"><img src="images/logov.png" alt="Vdowload.com"/></a>
+				</h1>
+				<div class="top-search">
+					<form action="#" method="post" accept-charset="utf-8">
+						<input type="text" class="input-search" name="key" value="" placeholder="Nhập tên ứng dụng hoặc chức năng...">
+						<select name="category" class="styled">
+							<option value="">Tất cả</option>
+							<option value="">Computer</option>
+							<option value="">Android</option>
+							<option value="">Ios</option>
+							<option value="">Winphone</option>
+							<option value="">Mobile tip</option>
+							<option value="">Thủ thuật MT</option>
+							<option value="">Tài liệu</option>
+						</select>
+						<button type="submit"><span>Search</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="main-menu">
+			<div class="inner">
+				<ul>
+					<li><a href="#" title=""><img src="images/icons/cpt.png" alt="">Computer</a></li>
+					<li class="active"><a href="#" title=""><img src="images/icons/android.png" alt="">Android</a></li>
+					<li><a href="#" title=""><img src="images/icons/ios.png" alt="">IOS</a></li>
+					<li><a href="#" title=""><img src="images/icons/wp.png" alt="">Winphone</a></li>
+					<li><a href="#" title=""><img src="images/icons/tip.png" alt="">Mobile tip</a></li>
+					<li><a href="#" title=""><img src="images/icons/tt.png" alt="">Thủ thuật máy tính</a></li>
+					<li><a href="#" title=""><img src="images/icons/doc.png" alt="">Tài liệu</a></li>
+					<li><a href="#" title=""><img src="images/icons/vn.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="inner">
+			<div class="col-left">
+				<div class="block block-top">
+					<div class="block-title"><h3>Thư viện tài liệu</h3></div>
+					<ul>
+						<li><a href="#">Luận Văn </a></li>
+						<li><a href="#">Phổ Thông </a></li>
+						<li><a href="#">Đề Thi </a></li>
+						<li><a href="#">Kinh Tế </a></li>
+						<li><a href="#">CNTT </a></li>
+						<li><a href="#">KTCN </a></li>
+						<li><a href="#">Tự Nhiên </a></li>
+						<li><a href="#">Xã Hội </a></li>
+						<li><a href="#">Ngoại Ngữ </a></li>
+						<li><a href="#">Y - Dược </a></li>
+						<li><a href="#">Giáo Dục </a></li>
+						<li><a href="#">Truyện </a></li>
+						<li><a href="#">Biểu Mẫu </a></li>
+						<li><a href="#">Tổng Hợp </a></li>
+						<li><a href="#">Tài liệu hay</a></li>
+					</ul>
+				</div>
+				<div class="block block-top">
+					<div class="block-title"><h3>Thư viện Sách</h3></div>
+					<ul>
+						<li><a href="#">Sách Văn Học</a></li>
+						<li><a href="#">Sách Kinh Tế</a></li>
+						<li><a href="#">Sách Chuyên Ngành</a></li>
+						<li><a href="#">Sách Kỹ Năng Sống</a></li>
+						<li><a href="#">Truyện Tranh</a></li>
+						<li><a href="#">Sách cho tuổi mới lớn</a></li>
+						<li><a href="#">Sách học Ngoại ngữ</a></li>
+						<li><a href="#">Sách Văn hóa - Du lịch</a></li>
+						<li><a href="#">Sách khác</a></li>
+						<li><a href="#">Sách tiếng Anh</a></li>
+					</ul>
+				</div>
+				<div class="fanpage block">
+					<div class="block-title"><h3>Fanpage for Android</h3></div>
+					<div class="fb-like-box" data-href="https://www.facebook.com/AndroidStoreVietnam" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true" data-width="212px"></div>
+				</div>
+				<div class="block top-user">
+					<div class="block-title">
+						<h3>Top user <span>Tuần / Tháng</span></h3>
+					</div>
+					<ul class="list-user">
+						<li><a title="" href="#"><img alt="" src="images/u1.jpg"></a>
+							<a title="" href="#">Aladdin</a>
+							<span class="point">512 Điểm</span>
+						</li>
+						<li><a title="" href="#"><img alt="" src="images/u2.jpg"></a>
+							<a title="" href="#">Nguyen Thanh Phong</a>
+							<span class="point">512 Điểm</span>
+						</li><li><a title="" href="#"><img alt="" src="images/u1.jpg"></a>
+							<a title="" href="#">Aladdin</a>
+							<span class="point">512 Điểm</span>
+						</li>
+						<li><a title="" href="#"><img alt="" src="images/u2.jpg"></a>
+							<a title="" href="#">Nguyen Thanh Phong</a>
+							<span class="point">512 Điểm</span>
+						</li><li><a title="" href="#"><img alt="" src="images/u1.jpg"></a>
+							<a title="" href="#">Aladdin</a>
+							<span class="point">512 Điểm</span>
+						</li>
+						<li><a title="" href="#"><img alt="" src="images/u2.jpg"></a>
+							<a title="" href="#">Nguyen Thanh Phong</a>
+							<span class="point">512 Điểm</span>
+						</li>
+					</ul>
+				</div>
+				<div class="requesttl block">
+					<div class="block-title">
+						<h3>Yêu cầu tài liệu</h3>
+					</div>
+					<form accept-charset="utf-8" method="post" action="#">
+						<input type="text" placeholder="Tên tài liệu..." value="" name="nametl">
+						<select name="categorytl">
+							<option value="">Chọn loại tài liệu</option><option value="">văn bản</option>
+						</select>
+						<textarea placeholder="Thông tin mô tả" name="cttl"></textarea>
+						<p class="infosp">Hỗ trợ: <a href="mailto:Support@vdownload">Support@vdownload.com</a></p>
+						<button class="submit-org" type="submit">Gửi</button>
+					</form>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="tl-banner">
+					<a href="#" title=""><img src="images/tl-banner.jpg" alt=""></a>
+				</div>
+				<div class="documents">
+					<div class="featured-books">
+						<h3 class="title">Sách nổi bật</h3>
+						<div class="slider4">
+							<ul class="slides">
+								<li><a href="#" title=""><img src="images/books/b1.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b2.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b3.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b4.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="newest-books">
+						<h3 class="title">Sách mới</h3>
+						<div class="slider4">
+							<ul class="slides">
+								<li><a href="#" title=""><img src="images/books/b1.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b2.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b3.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b4.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="featured-documents">
+						<h3 class="title">Tài liệu nổi bật</h3>
+						<div class="slider4">
+							<ul class="slides">
+								<li><a href="#" title=""><img src="images/books/b1.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b2.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b3.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b4.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="newest-documents">
+						<h3 class="title">Tài liệu mới</h3>
+						<div class="slider4">
+							<ul class="slides">
+								<li><a href="#" title=""><img src="images/books/b1.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b2.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b3.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b4.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="best-documents">
+						<h3 class="title">Tài liệu hay</h3>
+						<div class="slider4">
+							<ul class="slides">
+								<li><a href="#" title=""><img src="images/books/b1.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b2.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b3.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b4.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+								</li><li><a href="#" title=""><img src="images/books/b5.jpg" alt=""></a>
+									<p class="viewed">25634</p>
+									<a href="#" title="">Một mình trên đường</a>
+									<p class="author">Lê Tân SITEX</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="adv-horizontal">
+					<a href="#" title=""><img src="images/adv/adv6.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<div class="inner">
+			<ul class="footer-menu">
+				<li class="active"><a href="#" title="">Home</a></li><li><a href="#" title="">GIỚI THIỆU </a></li><li><a href="#" title="">ĐIỀU KHOẢN SỬ DỤNG </a></li><li><a href="#" title="">CHÍNH SÁCH BẢO MẬT </a></li><li><a href="#" title="">DCMA </a></li><li><a href="#" title="">UPLOAD APPS, GAMES</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<div class="inner">
+				<p>Copyright 2014 Powered by X-Media J.S.C. All Rights Reserved.</p>
+			</div>
+		</div>
+		<div id="up">
+			<a href="#header" title="Trở lên"><img src="../images/up.png" alt=""></a>
+		</div>
+	</div>
+	<div id="contactlink">
+		<a href="#contact" class="inline"><img src="/images/contactlink.png" alt=""></a>
+		<div id="contact" class="popup-form">
+		<div class="block-title">
+			<h3>Contact Us</h3>
+		</div>
+		<div class="contact-form">
+			<form action="#" method="get" accept-charset="utf-8">
+				<p>
+					<input class="name" type="text" name="name" value="" placeholder="Your name">
+					<input class="email" type="email" name="email" value="" placeholder="Your Email address">
+				</p>
+					<p><textarea name="contact-text" class="textarea"></textarea></p>
+					<button type="submit" class="blue-button"><span>Send</span></button>
+			</form>
+		</div>
+	</div>
+	</div>
+	
+	<div id="pop-app">
+		<div class="block-title">
+			<h3>Ứng dụng tải lên</h3>
+			<span id="closepop"></span>
+		</div>
+		<div class="pop-app-slider">
+			<ul class="slides">
+				<li><a href="#" title="" class="thumb"><img src="images/appicons/a1.jpg" alt=""></a>
+					<div class="details">
+						<h4 class="name-app"><a href="#">Online RPG Avab game</a></h4>
+						<p class="com">Asobimo, Inc.</p>
+						<span class="ratings"><span style="width:80%;" class="rating-per"></span></span>
+						<a href="#" class="freeblack" title="">Miễn phí</a>
+					</div>
+				</li>
+				<li><a href="#" title="" class="thumb"><img src="images/appicons/a2.jpg" alt=""></a>
+					<div class="details">
+						<h4 class="name-app"><a href="#">Online RPG Avab game</a></h4>
+						<p class="com">Asobimo, Inc.</p>
+						<span class="ratings"><span class="rating-per" style="width:80%;"></span></span>
+						<a href="#" class="freeblack" title="">Miễn phí</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>

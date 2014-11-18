@@ -6,9 +6,15 @@ $(document).ready(function() {
 	});
 	viewMoreText(".block-top","403px");
 	viewMoreText(".description","120px");
-	slider4(".description",162,10);
-	slider4(".related-app",138,53);
-	slider4(".related-com",138,53);
+	viewMoreText(".top-software","314px");
+	flexSlider(".description",162,10,4);
+	flexSlider(".related-app",138,53,4);
+	flexSlider(".related-com",138,53,4);
+	flexSlider(".featured-books",126,12,5);
+	flexSlider(".newest-books",126,12,5);
+	flexSlider(".featured-documents",126,12,5);
+	flexSlider(".newest-documents",126,12,5);
+	flexSlider(".best-documents",126,12,5);
 	$("#closepop").click(function(event) {
 		$(this).parent().parent("#pop-app").hide('slow');
 	});
@@ -24,6 +30,9 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		$($(this).find('a').attr("href") + '-content').addClass('active');
 	 });
+	$('.upload-click').click(function(event) {
+		$('#uploadfile').click();
+	});
 	$(".inline").colorbox({inline:true, width:"auto"});
 });
 function viewMoreText(Parent,mHeight){
@@ -38,14 +47,14 @@ function viewMoreText(Parent,mHeight){
 		$(this).prev('.viewmore').show();
 	});
 }
-function slider4(parent,width,margin) {
+function flexSlider(parent,width,margin,numberItems) {
 	$(parent+" .slider4").flexslider({
 		animation: "slide",
 	    itemWidth: width,
 	    itemMargin: margin,
 	    controlNav:false,
-	    minItems: 4,
-	    maxItems: 4,
+	    minItems: numberItems,
+	    maxItems: numberItems,
 	    slideshow: false
 	})
 }

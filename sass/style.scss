@@ -48,10 +48,10 @@
 	button{margin-top: -1px; border: none;float: right; background:url(../images/icons/search.png) no-repeat center center $bluebg; color:#fff; width: 98px; height: 42px; text-indent: -99999px; }
 }
 .main-menu { background: #2a2a2a; height: 55px;
-	li{float: left; padding:0 17.3px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f;
+	li{float: left; padding:0 17px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f;
 		img {vertical-align: middle; padding-right: 9px;}
 		&:hover,&.active {background: #424242;}
-		&:last-child {padding-right: 0; float: right;
+		&:last-child {padding-right: 5px; float: right;
 			img {padding-right: 0;}
 		}
 	}
@@ -561,9 +561,47 @@ ul.apps-list {  @extend .clearfix;
 .reading-bar {background: #d2d2d2; height: 10px; margin:8px 0; width: 223px; border-radius: 7px;
 	.percent {background:#19a1db; height: 10px; border-radius:7px 0 0 7px }
 }
-.upload-content {background: #fff;
+.upload-content {background: #fff; @extend .clearfix;
 	.title { border:1px solid #e5e5e5; height: 43px; line-height: 43px; padding-left: 60px; padding-right: 15px;
 		p {display: inline-block; float: left; line-height: 43px;}
 		a.ul-button-green {float: right; margin:5px 0;}
 	}
+}
+.upload-form { padding:27px 60px 100px; @extend .clearfix;
+	.img-left {float: left;margin-right: 70px; width: 130px;
+		img {width: 116px; height: 176px; padding:5px; border:1px solid #ccc;}
+	}
+	.right-form { width: 567px; float: left;
+		label { display: block; margin:10px 0 5px;
+			span {color: $red;}
+		}
+		input,textarea,select {width: 100%; @include box-sizing(border-box); padding-left:5px; height: 30px; line-height: 30px\9; border: 1px solid #ccc;border-radius: 2px;}
+		textarea {height: 94px; padding-top: 5px;}
+		.wide {@extend .clearfix;
+			.left,.right {width: 48%;}
+		}
+		p{display: block; margin:15px 0 10px;}
+		button {margin-top: 20px; width: 98px; text-transform: uppercase;}
+	}
+}
+#uploadfile {display: none;}
+/* Tai lieu */
+.documents {background: #fff; @extend .clearfix;
+	.tl-banner {margin-bottom: 15px 10px;}
+	h3.title {text-transform: uppercase; border-bottom: 1px solid #ccc; line-height: 25px; padding-left: 15px; font-size: 15px;padding-top:  5px; margin-bottom: 25px;}
+	.slider4 { margin:15px 10px; padding:0 27px 15px;
+		.slides {
+			li {margin:0 5px; @include box-sizing(border-box); text-align: center;
+				img {border:1px solid #e5e5e5; float: left;}
+				p.viewed {float: left;margin: -2px 0 10px 1px; height: 23px; line-height: 23px; display: block; width: 129px;color:#fff;font-size:12px;background: url(../images/eye.png) no-repeat 27px center #424242;padding-left: 57px; @include box-sizing(border-box);}
+				p.author {color: #6b6b6b;font-size: 11px;}
+			}
+		}
+	}
+	
+}
+/* Thu thuat MT */
+.top-software { padding-bottom: 15px;
+	ul {max-height: 314px; overflow: hidden;}
+	.viewmore,.viewless  {padding-left: 15px; margin-top: 10px;}
 }

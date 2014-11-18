@@ -19,9 +19,9 @@ body { font: normal 15px Arial, sans-serif, Verdana; color: #343434; background:
 
 .right { float: right; }
 
-.clear, .clearfix, #content, .tab-app, .startup, .startup .listpages, .mid-header .inner, .app-block .info .top-info, .most-download ul li, .adv-horizontal, .footer-tags, #footer .footer-menu, .popup-form .bottom-form, .contact-form, ul.apps-list, .top-content, .category-app, .detail-app, .related-app, .related-com, .popular-software ul, .mobile-tip-ct, .small-breadcrumb, .news2col, .top-user .block-title, .top-user .list-user li, .tl-list-content li { clear: both; }
+.clear, .clearfix, #content, .tab-app, .startup, .startup .listpages, .mid-header .inner, .app-block .info .top-info, .most-download ul li, .adv-horizontal, .footer-tags, #footer .footer-menu, .popup-form .bottom-form, .contact-form, ul.apps-list, .top-content, .category-app, .detail-app, .related-app, .related-com, .popular-software ul, .mobile-tip-ct, .small-breadcrumb, .news2col, .top-user .block-title, .top-user .list-user li, .tl-list-content li, .upload-content, .upload-form, .upload-form .right-form .wide, .documents { clear: both; }
 
-.clearfix:after, #content:after, .tab-app:after, .startup:after, .startup .listpages:after, .mid-header .inner:after, .app-block .info .top-info:after, .most-download ul li:after, .adv-horizontal:after, .footer-tags:after, #footer .footer-menu:after, .popup-form .bottom-form:after, .contact-form:after, ul.apps-list:after, .top-content:after, .category-app:after, .detail-app:after, .related-app:after, .related-com:after, .popular-software ul:after, .mobile-tip-ct:after, .small-breadcrumb:after, .news2col:after, .top-user .block-title:after, .top-user .list-user li:after, .tl-list-content li:after { content: ""; display: table; clear: both; }
+.clearfix:after, #content:after, .tab-app:after, .startup:after, .startup .listpages:after, .mid-header .inner:after, .app-block .info .top-info:after, .most-download ul li:after, .adv-horizontal:after, .footer-tags:after, #footer .footer-menu:after, .popup-form .bottom-form:after, .contact-form:after, ul.apps-list:after, .top-content:after, .category-app:after, .detail-app:after, .related-app:after, .related-com:after, .popular-software ul:after, .mobile-tip-ct:after, .small-breadcrumb:after, .news2col:after, .top-user .block-title:after, .top-user .list-user li:after, .tl-list-content li:after, .upload-content:after, .upload-form:after, .upload-form .right-form .wide:after, .documents:after { content: ""; display: table; clear: both; }
 
 .checkbox { width: 23px; height: 23px; padding: 0 5px 0 0; background: url(../images/icons/checkbox.png) no-repeat 0 0; display: block; clear: left; float: left; }
 
@@ -136,10 +136,10 @@ a.viewless { display: none; }
 .top-search button { margin-top: -1px; border: none; float: right; background: url(../images/icons/search.png) no-repeat center center #19a1db; color: #fff; width: 98px; height: 42px; text-indent: -99999px; }
 
 .main-menu { background: #2a2a2a; height: 55px; }
-.main-menu li { float: left; padding: 0 17.3px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f; }
+.main-menu li { float: left; padding: 0 17px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f; }
 .main-menu li img { vertical-align: middle; padding-right: 9px; }
 .main-menu li:hover, .main-menu li.active { background: #424242; }
-.main-menu li:last-child { padding-right: 0; float: right; }
+.main-menu li:last-child { padding-right: 5px; float: right; }
 .main-menu li:last-child img { padding-right: 0; }
 
 /* end header */
@@ -491,3 +491,32 @@ ul.apps-list li .bottom a { color: #0087c1; float: right; line-height: 19px; tex
 .upload-content .title { border: 1px solid #e5e5e5; height: 43px; line-height: 43px; padding-left: 60px; padding-right: 15px; }
 .upload-content .title p { display: inline-block; float: left; line-height: 43px; }
 .upload-content .title a.ul-button-green { float: right; margin: 5px 0; }
+
+.upload-form { padding: 27px 60px 100px; }
+.upload-form .img-left { float: left; margin-right: 70px; width: 130px; }
+.upload-form .img-left img { width: 116px; height: 176px; padding: 5px; border: 1px solid #ccc; }
+.upload-form .right-form { width: 567px; float: left; }
+.upload-form .right-form label { display: block; margin: 10px 0 5px; }
+.upload-form .right-form label span { color: #ea0000; }
+.upload-form .right-form input, .upload-form .right-form textarea, .upload-form .right-form select { width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding-left: 5px; height: 30px; line-height: 30px\9; border: 1px solid #ccc; border-radius: 2px; }
+.upload-form .right-form textarea { height: 94px; padding-top: 5px; }
+.upload-form .right-form .wide .left, .upload-form .right-form .wide .right { width: 48%; }
+.upload-form .right-form p { display: block; margin: 15px 0 10px; }
+.upload-form .right-form button { margin-top: 20px; width: 98px; text-transform: uppercase; }
+
+#uploadfile { display: none; }
+
+/* Tai lieu */
+.documents { background: #fff; }
+.documents .tl-banner { margin-bottom: 15px 10px; }
+.documents h3.title { text-transform: uppercase; border-bottom: 1px solid #ccc; line-height: 25px; padding-left: 15px; font-size: 15px; padding-top: 5px; margin-bottom: 25px; }
+.documents .slider4 { margin: 15px 10px; padding: 0 27px 15px; }
+.documents .slider4 .slides li { margin: 0 5px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; text-align: center; }
+.documents .slider4 .slides li img { border: 1px solid #e5e5e5; float: left; }
+.documents .slider4 .slides li p.viewed { float: left; margin: -2px 0 10px 1px; height: 23px; line-height: 23px; display: block; width: 129px; color: #fff; font-size: 12px; background: url(../images/eye.png) no-repeat 27px center #424242; padding-left: 57px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.documents .slider4 .slides li p.author { color: #6b6b6b; font-size: 11px; }
+
+/* Thu thuat MT */
+.top-software { padding-bottom: 15px; }
+.top-software ul { max-height: 314px; overflow: hidden; }
+.top-software .viewmore, .top-software .viewless { padding-left: 15px; margin-top: 10px; }
