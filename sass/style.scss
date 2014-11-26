@@ -22,7 +22,7 @@
 	ul { float: right;
 		li {float: left; display: inline-block; margin-right: 10px; color:#fff; line-height: 37px;
 			> a > img {margin-top:3px;}
-			.inline{padding: 0 5px;}
+			.inline{padding: 0 5px; white-space: nowrap;}
 			&:last-child {margin-right: 0;
 				.inline {padding-right: 0;}
 			}
@@ -48,7 +48,7 @@
 	button{margin-top: -1px; border: none;float: right; background:url(../images/icons/search.png) no-repeat center center $bluebg; color:#fff; width: 98px; height: 42px; text-indent: -99999px; }
 }
 .main-menu { background: #2a2a2a; height: 55px;
-	li{float: left; padding:0 17px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f;
+	li{float: left; padding:0 16.9px; color: #fff; line-height: 55px; border-left: 1px solid #5f5f5f; white-space: nowrap;
 		img {vertical-align: middle; padding-right: 9px;}
 		&:hover,&.active {background: #424242;}
 		&:last-child {padding-right: 5px; float: right;
@@ -269,7 +269,7 @@ ul.apps-list {  @extend .clearfix;
 /* Detail page */
 .top-content {background: #fff;@extend .clearfix; padding:20px 0 30px;}
 .category-app { background: #e5e5e5;height: 43px; @extend .clearfix;
-	li { float: left; text-transform: uppercase; padding:0 51px; line-height: 43px;
+	li { float: left; text-transform: uppercase; padding:0 51px; line-height: 43px; white-space: nowrap;
 		&.active {background: url(../images/icons/title-top.png) no-repeat 96% center $bluebg; color:#fff; padding-left:23px; text-align: left; }
 	}
 }

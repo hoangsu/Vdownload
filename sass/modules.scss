@@ -9,7 +9,7 @@ $Arial:     Arial, sans-serif, Verdana;
 *{margin:0; padding:0;}
 a {color:inherit; text-decoration: none;}
 img {border:none; max-width: 100%;}
-li {list-style-type: none;}
+li {list-style-type: none; }
 body {font:normal 15px $Arial; color:$black1; background: #e5e5e5; position: relative;}
 .inner {width:1000px; margin:auto;}
 .left {float:left;}.right {float: right;}
