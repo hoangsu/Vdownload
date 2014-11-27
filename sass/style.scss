@@ -78,7 +78,9 @@
 .tt-mt {
 	ul{ padding: 15px 0;
 		li { padding-left: 25px;padding-right: 10px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #e2e2e2; background: url(../images/icons/blue-dot.png) no-repeat 10px 7px; clear: both;
-			a {color: $black1;}
+			a {color: $black1;
+				&:hover {color: $bluebg;}
+			}
 			&:last-child {margin-bottom: 0; padding-bottom: 0; border-bottom: none;}
 		}
 	}
@@ -270,11 +272,16 @@ ul.apps-list {  @extend .clearfix;
 .top-content {background: #fff;@extend .clearfix; padding:20px 0 30px;}
 .category-app { background: #e5e5e5;height: 43px; @extend .clearfix;
 	li { float: left; text-transform: uppercase; padding:0 51px; line-height: 43px; white-space: nowrap;
-		&.active {background: url(../images/icons/title-top.png) no-repeat 96% center $bluebg; color:#fff; padding-left:23px; text-align: left; }
+		&.active { text-align: left; padding:0; position: relative;
+			> a {color:#fff;  padding:0 51px 0 23px;display: block; background: url(../images/icons/title-top.png) no-repeat 96% center $bluebg;}
+			> ul {display: none; position: absolute; top:43px; left:0; padding:10px 0; background: #fff; border:1px solid #e5e5e5;max-height: 400px;width: 100%; z-index: 9; overflow-y: auto; overflow-x:hidden;
+				li {display: block; padding:5px 10px; text-transform: none; line-height: normal; float: none;}
+			}
+		}
 	}
 }
 .breadcrumb {margin-top: 20px; background: #fff; @extend .clearfix;
-	li {float: left; display: inline-block; margin-right: 10px; line-height: 30px;
+	li {float: left; display: inline-block; margin-right: 10px; line-height: 30px; white-space: nowrap;
 		&:after {content:"\203A"; padding-left: 7px;}
 		.home {background: url(../images/icons/home.png) no-repeat 0 0; display: inline-block;width: 22px; height: 20px;}
 		&:last-child {
@@ -291,13 +298,15 @@ ul.apps-list {  @extend .clearfix;
 	.info {width: 765px; float: left;
 		.one {float: left;
 			h2 {font-size: 30px; font-weight: normal; margin-bottom: 10px;}
-			h3 {font-size: 20px; text-transform: uppercase; color: $bluebg; margin-bottom: 5px; font-weight: normal;}
+			h3 {font-size: 20px; text-transform: uppercase; color: $bluebg; margin-bottom: 5px; font-weight: normal;
+				a.free-button {margin-left: 5px; vertical-align: text-bottom;}
+			}
 			p { line-height: 27px;}
 			.ratings1 {float: left; margin-right: 10px;}
 			.setup-button {margin:10px 0;clear: both; float: left;}
 		}
 		.two {text-align: right; float: right; padding-top: 10px;
-			p {line-height: 22px;}
+			p {line-height: 22px; white-space: nowrap;}
 		}
 		.barcode {float: right;
 			img {border:1px solid #dfdfdf; width: 151px; height: 151px;margin-left:10px; border-radius: 2px;}
