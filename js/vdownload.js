@@ -7,6 +7,16 @@ $(document).ready(function() {
 		controlNav: "thumbnails",
 		directionNav:false
 	});
+	$('.sticky-news').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav:false
+	});
+	$('.tl-banner').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav:false
+	});
 	viewMoreText(".block-top","403px");
 	viewMoreText(".description","120px");
 	viewMoreText(".top-software","314px");

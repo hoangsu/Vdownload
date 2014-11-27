@@ -6,6 +6,11 @@ $black1: #343434;
 $Arial:     Arial, sans-serif, Verdana;
 @mixin box-sizing($val) {box-sizing: $val; -moz-box-sizing: $val; -webkit-box-sizing: $val;}
 @mixin border-radius($radius) {border-radius: $radius;}
+@mixin box-shadow($val1,$val2,$shadown,$color) {
+    -moz-box-shadow: $val1 $val2 $shadown $color;
+    -webkit-box-shadow: $val1 $val2 $shadown $color;
+    box-shadow: $val1 $val2 $shadown $color;
+}
 *{margin:0; padding:0;}
 a {color:inherit; text-decoration: none;}
 a:hover {color: $bluebg;}
@@ -37,21 +42,31 @@ select option {padding-left: 5px;}
 	.rating-per1 {background: url(../images/icons/rating.png) repeat-x 0 0; height: 18px; display: block;}
 }
 .ul-button-green,.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black {display: inline-block;text-align: center; text-transform: uppercase;color:#fff;}
-.free-button {border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; }
-.dl-button-org,.submit-org{border-radius: 2px; background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;}
+.free-button {border-radius: 2px; background: url(../images/free-button.png) 0 0 repeat-x; height: 23px; line-height: 23px;min-width: 30px; padding:0 7px;font-size: 13px; 
+    &:hover {color: #fff; background: url(../images/free-button-hover.png) 0 0 repeat-x;}
+}
+.dl-button-org,.submit-org{border-radius: 2px; background: url(../images/download.png) repeat-x 0 0; height: 33px; line-height: 33px; width: 116px; font-size: 15px;
+    &:hover {color: #fff; background: url(../images/download-hover.png) repeat-x 0 0;}
+}
 .submit-org {cursor: pointer; height: 29px; line-height: 29px; width: 81px; border: none; color: #fff; }
 .dl-button-bl,.dl-button-black {background: url(../images/download2.png) repeat-x 0 0; height: 26px; line-height: 26px; width: 81px; font-size: 14px; text-transform: none; color: #fff;}
-.dl-button-black {background: #535353;}
+.dl-button-bl:hover {color: #fff; background: url(../images/download2-hover.png) repeat-x 0 0;}
+.dl-button-black {background: #535353;
+    &:hover {background-color: $bluebg; color: #fff;}
+}
 .ul-button-green {text-transform: none; background: url(../images/upload-green.png) repeat-x 0 0; color: #fff;width: 109px; height: 32px; line-height: 33px;}
 .continue-r {@extend .dl-button-org; width: 98px;}
-.downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:15px; font-size: 14px;}
-.freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;}
+.downtimes {background: url(../images/icons/dl.png) no-repeat 0 center; padding-left:18px; font-size: 14px;}
+.freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;
+    &:hover {background-color: $bluebg; color: #fff;}
+}
 .blue-button {background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
 .dark-button {display: inline-block; background: #343434; color: #fff; font-size: 13px; text-align: center; height: 29px; line-height: 29px; padding:0 8px; border-radius: 3px; border:none;}
-.wishlist-button {display: inline-block; background: url(../images/wishlist.png) repeat-x 0 center; color: #fff; text-align: center; height: 32px; line-height: 32px; padding:0 15px; border-radius: 3px; border:none;}
+.wishlist-button {display: inline-block; background: url(../images/wishlist.png) repeat-x 0 center; color: #fff; text-align: center; height: 32px; line-height: 32px; padding:0 15px; border-radius: 3px; border:none;
+    &:hover { background: url(../images/wishlist-hover.png) repeat-x 0 center; color: #fff;}
+}
 .setup-button {border-radius: 2px; display: inline-block; background:$bluebg; font-size: 15px; text-transform: uppercase; height: 35px; line-height: 35px; width: 90px; text-align: center; color: #fff;}
-.ul-button-green,.free-button,.dl-button-org,.dl-button-bl,.freeblack,.dl-button-black,.submit-org,
-.blue-button,.dark-button,.wishlist-button,.setup-button {
+.ul-button-green,.blue-button,.dark-button,.setup-button {
     &:hover {color:#fff; opacity:0.8;}
 }
 
@@ -62,8 +77,9 @@ select option {padding-left: 5px;}
 .detail-ct {background: #fff;}
 .tab-app {@extend .clearfix; margin-top: 5px; background: #e5e5e5;
     li{float: left; margin-right: 5px; color: #fff; background:#535353;white-space: nowrap; text-align: center; height: 35px; padding:0 25px; line-height: 35px; border-radius: 4px 4px 0 0;
-        &.active {height: 41px; line-height: 41px; margin-top: -6px; background: #19a1db; font-size: 18px;
-        }
+        &.active,&:hover {height: 41px; line-height: 41px; margin-top: -6px; }
+        &:hover {background-color: #535353;}
+        &.active {background: #19a1db; font-size: 18px;}
         a{color: #fff;}
     }
 }
@@ -81,3 +97,10 @@ select option {padding-left: 5px;}
 a.viewless, a.viewmore {color: $bluelink; }
 a.viewless {display: none;}
 .slider4 {position: relative; padding:0 34px 15px; }
+.giftcode {background: url(../images/giftcode.png) no-repeat 0 0; width: 387px; height: 61px; text-transform: uppercase;font-size: 15px; color: #fff; line-height: 61px; text-align: right; padding:0 10px; @include box-sizing(border-box);font-weight: bold;}
+.giftcode-icon {background: url(../images/icons/giftcode-icon.png) no-repeat 0 0;width: 41px; height: 40px; position: absolute; top:-15px; right:-15px; display: inline-block;
+    .gc-content {background: #fff; white-space: nowrap; color:#4d4d4d; display: none; position: absolute; left: 31px; top: -13px; border: 1px solid #ddd; border-radius: 2px; height: 22px; line-height: 22px; font-size: 12px; text-align: center;padding:0 10px;}
+    &:hover { background-position: 0 bottom;
+        .gc-content {display: inline-block;}
+    }
+}
