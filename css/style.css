@@ -277,7 +277,8 @@ a.viewless { display: none; }
 
 ul.apps-list li { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; width: 138px; margin-right: 13px; float: left; height: 212px; border: 1px solid #e6e6e6; border-radius: 2px; padding: 10px 7px 30px; overflow: hidden; position: relative; margin-bottom: 19px; }
 ul.apps-list li .thumb { text-align: center; }
-ul.apps-list li .thumb img { width: 112px; height: 112px; margin: 0 5px 5px; }
+ul.apps-list li .thumb img { width: 112px; height: 112px; margin: 0 5px 5px; opacity: 0.8; }
+ul.apps-list li .thumb img:hover { opacity: 1; }
 ul.apps-list li .name-app { font-size: 14px; font-weight: normal; margin-bottom: 2px; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; width: 133px; }
 ul.apps-list li p.com { font-size: 14px; color: #797979; }
 ul.apps-list li .bottom { position: absolute; bottom: 6px; left: 9px; width: 120px; }

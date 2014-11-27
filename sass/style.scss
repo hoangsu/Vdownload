@@ -253,7 +253,9 @@
 ul.apps-list {  @extend .clearfix; 
 	li {@include box-sizing(border-box); width: 138px; margin-right: 13px; float: left; height: 212px;border:1px solid #e6e6e6; border-radius: 2px; padding:10px 7px 30px; overflow: hidden; position: relative; margin-bottom: 19px;
 		.thumb { text-align: center;
-			img {width: 112px; height: 112px; margin:0 5px 5px;}
+			img {width: 112px; height: 112px; margin:0 5px 5px; opacity: 0.8;
+				&:hover {opacity:1;}
+			}
 		}
 		.name-app {font-size: 14px; font-weight: normal; margin-bottom: 2px;overflow: hidden;text-overflow: ellipsis;text-transform: uppercase;white-space: nowrap;width: 133px;}
 		p.com {font-size: 14px; color: #797979;}
