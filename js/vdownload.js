@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".text-size #aa").click(function(event) {
-	$(this).next('ul').slideToggle();
+		$(this).next('ul').slideToggle();
 	});
 	$('.home-slider').flexslider({
 		animation: "slide",
@@ -40,7 +40,9 @@ $(document).ready(function() {
 		$('#uploadfile').click();
 	});
 	$(".inline").colorbox({inline:true, width:"auto"});
-
+	$(".category-app li.active").click(function(event) {
+		$(this).find('ul').slideToggle();
+	});
 });
 function viewMoreText(Parent,mHeight){
 	$(Parent).find("a.viewmore").click(function() {
