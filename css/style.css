@@ -278,8 +278,8 @@ a.viewless { display: none; }
 .popup-form input.savepass + label { font-size: 12px; line-height: 23px; }
 .popup-form textarea { background: url(../images/icons/form.png) no-repeat 0 -167px; width: 100%; height: 110px; resize: none; padding: 10px 10px 0 40px; border: 1px solid #d9d8d8; box-sizing: border-box; }
 .popup-form .bottom-form { background: #dfdfdf; height: 28px; padding: 9px 0 9px 12px; }
-.popup-form .bottom-form .dark-button { float: left; }
-.popup-form .bottom-form .forgot-pass { color: #ea0000; font-size: 13px; margin-left: 10px; line-height: 28px; float: left; }
+.popup-form .bottom-form .dark-button { float: left; white-space: nowrap; }
+.popup-form .bottom-form .forgot-pass { white-space: nowrap; color: #ea0000; font-size: 13px; margin-left: 10px; line-height: 28px; float: left; }
 .popup-form .bottom-form .language-form { float: right; display: inline-block; white-space: nowrap; min-width: 111px; }
 .popup-form .bottom-form .language-form span.select { line-height: 28px; padding-right: 38px; }
 .popup-form .bottom-form .language-form select { height: 28px; width: 100%; }
@@ -298,7 +298,7 @@ a.viewless { display: none; }
 
 #login-ct.popup-form .login-social { padding: 0px 28px 20px; }
 #login-ct.popup-form .login-social .divide { border-top: 1px solid #d9d8d8; text-align: center; color: #888787; margin-bottom: 20px; }
-#login-ct.popup-form .login-social .divide span { padding: 0 10px; font-size: 13px; background: #fff; display: inline-block; margin-top: -20px; }
+#login-ct.popup-form .login-social .divide span { white-space: nowrap; padding: 0 10px; font-size: 13px; background: #fff; display: inline-block; margin-top: -20px; }
 #login-ct.popup-form .login-social a.gplus-button { margin-right: 15px; }
 #login-ct.popup-form .bottom-form p { display: inline-block; float: left; font-size: 13px; margin-right: 10px; line-height: 28px; margin-bottom: 0; }
 
