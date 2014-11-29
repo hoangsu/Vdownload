@@ -577,6 +577,7 @@ ul.apps-list li:hover { -moz-box-shadow: 0 0 6px #888888; -webkit-box-shadow: 0 
 .documents-detail-ct .detail h1.sname { font-size: 30px; margin-bottom: 10px; }
 .documents-detail-ct .detail p { margin-bottom: 10px; }
 .documents-detail-ct .detail p a { color: #0087c1; }
+.documents-detail-ct .detail .bottom { white-space: nowrap; }
 .documents-detail-ct .detail .wishlist-button { margin-left: 10px; }
 .documents-detail-ct .sharetool { margin-top: 15px; width: auto; }
 
@@ -618,3 +619,9 @@ ul.apps-list li:hover { -moz-box-shadow: 0 0 6px #888888; -webkit-box-shadow: 0 
 .reading-bar-bottom .bar .handle { cursor: move; width: 23px; height: 23px; background: url(../images/icons/handle.png) no-repeat 0 0; position: absolute; top: -10px; }
 .reading-bar-bottom .pagen h3 { font-size: 18px; font-weight: normal; text-align: center; margin-top: 7px; }
 .reading-bar-bottom .pagen p { margin-top: -15px; }
+
+#downloadbar { display: none; background: #424242; height: 58px; position: fixed; top: 0; left: 0; width: 100%; }
+#downloadbar .inner { height: 100%; background: url(../images/logo1.png) no-repeat right center; }
+#downloadbar .dl-button-bar { display: inline-block; background: url(../images/dl-bb.png) repeat-x 0 0; border-radius: 5px; border: 3px solid #fff; height: 46px; line-height: 46px; text-transform: uppercase; color: #fff; font-size: 17px; padding: 0 10px; -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); float: left; margin-top: 20px; }
+#downloadbar .dl-button-bar span { display: inline-block; background: url(../images/icons/dl-v.png) no-repeat left center; min-height: 21px; padding-left: 42px; }
+#downloadbar h3 { color: #19a1db; padding-left: 190px; padding-top: 25px; vertical-align: middle; }

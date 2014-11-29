@@ -77,3 +77,18 @@ function flexSlider(parent,width,margin,numberItems) {
 	    slideshow: false
 	})
 }
+jQuery(function(){
+	var shrinkHeader = 250;
+	jQuery(window).scroll(function() {
+		var scroll = getCurrentScroll();
+		if ( scroll >= shrinkHeader ) {
+			jQuery('#downloadbar').slideDown('slow');
+		}
+		else {
+			jQuery('#downloadbar').slideUp('slow');
+		}
+	});
+	function getCurrentScroll() {
+		return window.pageYOffset || document.documentElement.scrollTop;
+	}
+});
