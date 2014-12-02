@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".text-size #aa").click(function(event) {
-		$(this).next('ul').slideToggle();
+		$(this).next('.text-action').slideToggle();
 	});
 	$('.home-slider').flexslider({
 		animation: "slide",

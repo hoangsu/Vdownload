@@ -592,9 +592,18 @@ ul.apps-list li:hover { -moz-box-shadow: 0 0 6px #888888; -webkit-box-shadow: 0 
 
 .text-size { height: 55px; position: relative; float: left; }
 .text-size #aa { float: left; color: #fff; display: inline-block; width: 88px; line-height: 55px; font-size: 30px; background: url(../images/icons/r-ar.png) no-repeat 47px center; }
-.text-size ul { display: none; position: absolute; top: 55px; left: 0; width: 100%; background-color: #fff; }
-.text-size ul li { border-bottom: 1px solid #ddd; padding: 5px 10px; }
-.text-size ul li:hover { color: #0087c1; }
+
+.text-action { width: 480px; display: none; position: absolute; top: 55px; left: 0; background: #edf0f0; }
+
+.font-style { border: solid #d2d0d0; width: 100%; float: left; border-width: 0 0 1px; padding: 13px 30px 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.font-style li { width: 100%; float: left; list-style: none; margin-top: 16px; }
+.font-style li:first-child { margin-top: 15px; }
+.font-style li label { font-size: 18px; float: left; margin-right: 8px; width: 55px; line-height: 39px; color: #272727; font-weight: 400; display: inline-block; max-width: 100%; margin-bottom: 5px; }
+.font-style li select { padding-left: 25px; width: 357px; float: left; height: 39px; background: #fff; color: #272727; font-size: 17px; outline: 0; border: 1px solid #ccc; }
+.font-style li div { float: left; padding: 0; }
+.font-style li div:nth-child(1) { width: 62%; }
+.font-style li div:nth-child(2) { width: 37%; }
+.font-style li .decrease-size, .font-style li .increase-size { width: 81px; height: 37px; font-size: 16px; color: #333; background-color: #fff; border-color: #ccc; }
 
 .iconmenu { float: right; background: url(../images/icons/label.png) no-repeat right 0; width: 100px; }
 .iconmenu a { margin: 10px 0 12px 13px; display: inline-block; float: left; }
