@@ -60,7 +60,7 @@ select option {padding-left: 5px;}
 .freeblack {background: $black1; padding:0 5px;width: 64px; text-align: center; height: 24px; line-height: 24px; border-radius: 3px;font-size: 13px;
     &:hover {background-color: $bluebg; color: #fff;}
 }
-.blue-button {background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
+.blue-button {display: inline-block; background: #009fe1; color: #fff; font-size: 16px; text-align: center; height: 32px; line-height: 32px; padding:0 17px; border-radius: 3px; border:none;}
 .dark-button {display: inline-block; background: #343434; color: #fff; font-size: 13px; text-align: center; height: 29px; line-height: 29px; padding:0 8px; border-radius: 3px; border:none;}
 .wishlist-button {display: inline-block; background: url(../images/wishlist.png) repeat-x 0 center; color: #fff; text-align: center; height: 32px; line-height: 32px; padding:0 15px; border-radius: 3px; border:none;
     &:hover { background: url(../images/wishlist-hover.png) repeat-x 0 center; color: #fff;}

@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/jquery.flexslider-min.js" ></script>
 	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 	<script type="text/javascript" src="js/custom-form-elements.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="js/vdownload.js"></script>
 	<title>Đọc sách</title>
 </head>
@@ -43,18 +44,6 @@
 					                    <button type="button" class="btn btn-default decrease-size" title="Giảm (Ctrl -)">A</button>
 					                    <button type="button" class="btn btn-default increase-size bigger" title="Tăng (Ctrl +)">A</button>
 					                </div>
-					                <div class="layout">
-					                    <label>Bố cục</label>
-					                    
-					                    <div class="well">
-					                        <button class="layout-mode one-page " data-layout="one-page">
-					                            <i class="ic-one-column ic-onl-background" title="Một trang"></i>
-					                        </button>
-					                        <button class="layout-mode two-page bt-active" data-layout="two-page">
-					                            <i class="ic-two-columns ic-onl-background" title="Hai trang"></i>
-					                        </button>
-					                    </div>
-					                </div>
 					            </li>
 					        </ul>
 					    </div>
@@ -72,6 +61,133 @@
 				</div>
 				<div class="iconmenu">
 					<a href="#" title=""><img src="images/iconmenu.png" alt=""></a>
+					<div class="table-of-contents">
+					    <div class="list-book-mark">
+					        	<ul class="slim-el">
+					            
+					            <li class="chapter-list-item" data-id="51">
+					                <div>
+					                    <span>Hãy làm cuộc sống tốt đẹp hơn</span>
+					                    <span>2</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="10795">
+					                <div>
+					                    <span>Nghịch lý 1</span>
+					                    <span>304</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="9054">
+					                <div>
+					                    <span>Nghịch lý 2</span>
+					                    <span>255</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="7484">
+					                <div>
+					                    <span>Nghịch lý 3</span>
+					                    <span>210</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="5196">
+					                <div>
+					                    <span>Nghịch lý 4</span>
+					                    <span>146</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="2547">
+					                <div>
+					                    <span>Nghịch lý 5</span>
+					                    <span>72</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="3149">
+					                <div>
+					                    <span>Nghịch lý 6</span>
+					                    <span>89</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="4201">
+					                <div>
+					                    <span>Nghịch lý 7</span>
+					                    <span>119</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="4723">
+					                <div>
+					                    <span>Nghịch lý 8</span>
+					                    <span>133</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="5966">
+					                <div>
+					                    <span>Nghịch lý 9</span>
+					                    <span>168</span>
+					                </div>
+					            </li>
+					            
+					            <li class="chapter-list-item" data-id="6659">
+					                <div>
+					                    <span>Nghịch lý 10</span>
+					                    <span>187</span>
+					                </div>
+					            </li>
+					            
+					        </ul>
+					    </div>
+					</div>
+
+				</div>
+				<div class="bookmark">
+					<a href="#thongbao" class="inline" title=""></a>
+					<div id="thongbao"  class="popup-form">
+						<div class="block-title">
+							<h3>Thông báo</h3>
+						</div>
+						<div class="popup-inner ad-lib">
+					        <div class="popup-content popup-el"><p>Bạn cần đăng nhập để thực hiện chức năng này.</p>
+								<a class="blue-button inline" href="#login-ct">Đăng nhập</a>
+							</div>
+					    </div>
+					</div>
+					<div id="login-ct" class="popup-form">
+				<div class="block-title">
+					<h3>Đăng Nhập</h3>
+				</div>
+				
+				<form action="#" method="post" accept-charset="utf-8">
+					<p><input class="name" type="text" name="name" value="" placeholder="Tên đăng nhập hoặc email"></p>
+					<p><input class="password" type="password" name="password" value="" placeholder="Mật khẩu"></p>
+					<p><input class="savepass styled" type="checkbox" name="savepass">
+						<label for="savepass">Lưu mật khẩu?</label>
+					</p>
+					<p><button type="submit" class="blue-button"><span>Đăng Nhập</span></button></p>
+				</form>
+				<div class="login-social">
+					<p class="divide"><span>Hoặc đăng nhập bằng</span></p>
+					<a href="#" class="gplus-button" title=""><img src="images/gplogin.png" alt=""></a>
+					<a href="#" class="fb-button" title=""><img src="images/fblogin.png" alt=""></a>
+				</div>
+				<div class="bottom-form">
+					<p>Bạn chưa có tài khoản?</p>
+					<a class='inline button dark-button' href="#register-ct" title="">Đăng ký</a>
+					<div class="language-form">
+						<select name="language" class="styled">
+							<option>Tiếng việt</option>
+							<option>English</option>
+						</select>
+					</div>
+				</div>
+			</div>
 				</div>
 			</div>
 		</div>
