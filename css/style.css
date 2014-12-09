@@ -32,6 +32,8 @@ select option { padding-left: 5px; }
 
 .main-content { width: 774px; float: left; margin-top: 15px; }
 
+.main-content-left { width: 700px; float: left; margin-top: 15px; }
+
 .col-right { float: right; width: 286px; margin-left: 14px; }
 
 .col-mid { width: 474px; float: left; background: #fff; }
@@ -663,3 +665,9 @@ ul.apps-list li:hover { -moz-box-shadow: 0 0 6px #888888; -webkit-box-shadow: 0 
 #downloadbar .dl-button-bar { display: inline-block; background: url(../images/dl-bb.png) repeat-x 0 0; border-radius: 5px; border: 3px solid #fff; height: 46px; line-height: 46px; text-transform: uppercase; color: #fff; font-size: 17px; padding: 0 10px; -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.4); float: left; margin-top: 20px; }
 #downloadbar .dl-button-bar span { display: inline-block; background: url(../images/icons/dl-v.png) no-repeat left center; min-height: 21px; padding-left: 42px; }
 #downloadbar h3 { color: #19a1db; padding-left: 190px; padding-top: 25px; vertical-align: middle; }
+
+.search-list-app { background: #fff; }
+.search-list-app .app-block { border-bottom: 1px dotted #343434; }
+.search-list-app .app-block .sharetool { width: 511px; display: block; float: left; margin-top: 15px; }
+
+.col-right.outer { margin-top: 15px; }

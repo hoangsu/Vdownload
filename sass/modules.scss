@@ -28,6 +28,7 @@ select option {padding-left: 5px;}
 #content { @extend .clearfix;}
 .col-left {float: left; width: 212px; margin-right: 14px;margin-top:15px;}
 .main-content {width: 774px; float: left;margin-top:15px;}
+.main-content-left {width: 700px; float: left;margin-top:15px;}
 .col-right {float: right; width: 286px; margin-left: 14px;}
 .col-mid {width: 474px; float: left; background: #fff; }
 .block-title {background: $bluebg; height: 34px; line-height: 34px; padding: 0 10px; text-transform: uppercase; color:#fff;
