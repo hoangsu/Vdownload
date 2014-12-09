@@ -43,6 +43,13 @@ $(document).ready(function() {
 		slideshow: false
 
 	});
+	$('.reading-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		slideshow: false,
+		 startAt: 1
+
+	});
 	$('.tabs li').click(function(){
 		$('.tabs li').removeClass('active');
 		$('.tab-content').removeClass('active');

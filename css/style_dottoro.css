@@ -1,0 +1,67 @@
+
+/************
+*   SLIDER   
+*************/
+
+.slider_slides_outer_wrapper {position:relative;overflow:hidden;}
+.slider_slides_inner_wrapper {position:relative;margin:auto;}
+.slider_slides, .slider_slides_row {height: 100%;}
+.slider_slide_wrapper {overflow:hidden;margin:auto;position:relative;}
+.slider_slide {
+	display:block;position:relative;top:0;left:0;background-position:center center;background-repeat:no-repeat;
+	background-size:cover;max-width:100%;overflow: hidden;
+	z-index: 1; /* IE8 filter transform bug */
+}
+
+.slider-type-scroller.slider_slides_inner_wrapper {max-width:100%;}
+.slider-type-scroller.slider-orientation-horizontal.slider_slides {white-space:nowrap;}
+.slider-type-scroller.slider-orientation-horizontal > .slider_slide_wrapper {display:inline-block;white-space:normal;max-width:100%;max-height:100%;margin:0 2px;}
+.slider-type-scroller.slider-orientation-horizontal > .slider_slide_wrapper.context-dep-width {margin:0;}
+.slider-type-scroller.slider-orientation-vertical > .slider_slide_wrapper {display:block;max-height:100%;margin:2px 0;padding:2px 0;}
+.slider-type-scroller.slider-orientation-vertical > .slider_slide_wrapper > .slider_slide {max-width:100%;}
+.slider-type-scroller.slider_slides {position: relative; left: 0; top: 0;overflow:visible;}
+
+/* abspos buttons */
+.slider_button.abspos {position:absolute;text-align:center;z-index:100;}
+.slider.orientation-horizontal .slider_prev_button.abspos,
+.slider.orientation-horizontal .slider_prev_button.abspos.disc.half {left:0;}
+.slider.orientation-horizontal .slider_prev_button.abspos.disc {left:6px;}
+.slider.orientation-horizontal .slider_next_button.abspos, .slider.orientation-horizontal .slider_next_button.abspos.disc.half {right:0;}
+.slider.orientation-horizontal .slider_next_button.abspos.disc {right:6px;}
+.slider.orientation-vertical .slider_prev_button.abspos, .slider.orientation-vertical .slider_prev_button.abspos.disc.half {top:0;}
+.slider.orientation-vertical .slider_prev_button.abspos.disc {top:6px;}
+.slider.orientation-vertical .slider_next_button.abspos, .slider.orientation-vertical .slider_next_button.abspos.disc.half {bottom:0;}
+.slider.orientation-vertical .slider_next_button.abspos.disc {bottom:6px;}
+.slider_button.abspos .font-icon {font-size:20px;padding:0;}
+.slider_button.abspos.fullsize {margin:0 !Important;}
+
+.slider.orientation-horizontal .slider_button.center {top:50%;margin-top:-16px;}
+.slider.orientation-horizontal .slider_button.center.small {margin-top:-9px;}
+.slider.orientation-horizontal .slider_button.center.medium {margin-top:-12px;}
+.slider.orientation-vertical .slider_button.center {left:50%;margin-top:0;margin-left:-16px;top:auto;right:auto}
+.slider.orientation-vertical .slider_button.center.small {margin-left:-9px;}
+.slider.orientation-vertical .slider_button.center.medium {margin-left:-12px;}
+
+/*   Range   */
+
+.range_control {}
+.range_track {position:relative;height:4px;}
+
+.range_progress {position:relative;}
+.range_control.orientation-horizontal .range_progress {width:0;height:4px;}
+.range_control.orientation-horizontal.direction-normal .range_progress {left:0}
+.range_control.orientation-horizontal.direction-reverse .range_progress {right:0}
+
+.range_thumb {cursor:pointer;position:absolute;}
+.range_value_display {text-align:center;}
+
+.range_progress {background-color:#888;background-image: linear-gradient(to bottom, #a9a9a9 0%, #999 50%, #a0a0a0 100%);}
+
+.range_control.orientation-vertical {position:absolute;top:0;bottom:0;width:4px;z-index:10;}
+.range_control.orientation-vertical .range_track {width:4px;position:absolute;top:0;bottom:0;height:auto;}
+.range_control.orientation-vertical .range_thumb {left:-10px;}
+.range_control.orientation-vertical .range_progress {height:0;width:4px;}
+.range_control.orientation-vertical.direction-normal .range_progress {top:0}
+.range_control.orientation-vertical.direction-reverse .range_progress {bottom:0}
+.range_control.orientation-vertical .range_progress {background-image: linear-gradient(to right, #a9a9a9 0%, #999 50%, #a0a0a0 100%);}
+.range_control.orientation-vertical .range_track {background-image: linear-gradient(to right, #c9c9c9 0%, #b9b9b9 50%, #c0c0c0 100%);}
